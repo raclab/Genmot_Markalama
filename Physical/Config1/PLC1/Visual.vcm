@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0.90.36 SP18?>
+<VcMapping>
+  <Row Address="IF7.ST1" ObjectName="Visu" RotationAngle="0" KeyPriority="Lower Cyclic #8" Description="VNC-Viewer-XGA" />
+  <Row Address="IF7.ST1.KB1" Master="IF7.ST1" KeyMapping="PS2-Keyboard.dis" Description="PS2-Keyboard" />
+  <Row KeyPriority="Lower Cyclic #8" Description="PS2-Keyboard" />
+</VcMapping>

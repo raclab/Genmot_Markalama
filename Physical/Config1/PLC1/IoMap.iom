@@ -1,0 +1,49 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * File: IoMap.iom
+ * Author: Coder
+ * Created: September 22, 2013
+ ********************************************************************
+ * IO mapping file
+ ********************************************************************)
+VAR_CONFIG
+	DI.Acil_Stop AT %IX.SL1.IF1.ST1.IF1.ST2.DigitalInput01;
+	DI.X_PosLimit AT %IX.SL1.IF1.ST1.IF1.ST2.DigitalInput03;
+	DI.X_NegLimit AT %IX.SL1.IF1.ST1.IF1.ST2.DigitalInput04;
+	DI.X_RefSensor AT %IX.SL1.IF1.ST1.IF1.ST2.DigitalInput02;
+	DI.Y_NegLimit AT %IX.SL1.IF1.ST1.IF1.ST2.DigitalInput06;
+	DI.Y_RefSensor AT %IX.SL1.IF1.ST1.IF1.ST2.DigitalInput05;
+	DI.Y_PosLimit AT %IX.SL1.IF1.ST1.IF1.ST2.DigitalInput07;
+	DI.Lazer_IsBitti AT %IX.SL1.IF1.ST1.IF1.ST2.DigitalInput08;
+	DI.GRX_PosLimit AT %IX.SL1.IF1.ST1.IF1.ST3.DigitalInput01;
+	DI.GRX_RefSensor AT %IX.SL1.IF1.ST1.IF1.ST2.DigitalInput12;
+	DI.GRX_NegLimit AT %IX.SL1.IF1.ST1.IF1.ST2.DigitalInput11;
+	DI.GRZ_PosLimit AT %IX.SL1.IF1.ST1.IF1.ST3.DigitalInput04;
+	DI.GRZ_NegLimit AT %IX.SL1.IF1.ST1.IF1.ST3.DigitalInput03;
+	DI.GRZ_RefSensor AT %IX.SL1.IF1.ST1.IF1.ST3.DigitalInput02;
+	DI.GRY_NegLimit AT %IX.SL1.IF1.ST1.IF1.ST3.DigitalInput06;
+	DQ.Konveyor_Ileri AT %QX.SL1.IF1.ST1.IF1.ST7.DigitalOutput01;
+	DQ.Konveyor_Geri AT %QX.SL1.IF1.ST1.IF1.ST7.DigitalOutput02;
+	DQ.Lazer_Start AT %QX.SL1.IF1.ST1.IF1.ST6.DigitalOutput01;
+	DQ.Lazer_Stop AT %QX.SL1.IF1.ST1.IF1.ST6.DigitalOutput02;
+	DQ.Lazer_Pointer AT %QX.SL1.IF1.ST1.IF1.ST6.DigitalOutput03;
+	DQ.Lazer_Hatch AT %QX.SL1.IF1.ST1.IF1.ST6.DigitalOutput04;
+	DQ.Lazer_Barcode AT %QX.SL1.IF1.ST1.IF1.ST6.DigitalOutput05;
+	DQ.Kripper_Ac AT %QX.SL1.IF1.ST1.IF1.ST6.DigitalOutput07;
+	DQ.Kripper_Kapat AT %QX.SL1.IF1.ST1.IF1.ST6.DigitalOutput08;
+	DI.LAnahtarKonumu1 AT %IX.SL1.IF1.ST1.IF1.ST4.DigitalInput09;
+	DI.LAnahtarKonumu2 AT %IX.SL1.IF1.ST1.IF1.ST4.DigitalInput11;
+	DI.LAnahtarKonumu3 AT %IX.SL1.IF1.ST1.IF1.ST4.DigitalInput02;
+	DI.LAnahtarKonumu4 AT %IX.SL1.IF1.ST1.IF1.ST4.DigitalInput04;
+	DI.L_JoySag AT %IX.SL1.IF1.ST1.IF1.ST4.DigitalInput05;
+	DI.L_JoySol AT %IX.SL1.IF1.ST1.IF1.ST4.DigitalInput07;
+	DI.L_Input1 AT %IX.SL1.IF1.ST1.IF1.ST4.DigitalInput03;
+	DI.RAnahtarKonumu1 AT %IX.SL1.IF1.ST1.IF1.ST5.DigitalInput09;
+	DI.RAnahtarKonumu2 AT %IX.SL1.IF1.ST1.IF1.ST5.DigitalInput11;
+	DI.RAnahtarKonumu3 AT %IX.SL1.IF1.ST1.IF1.ST5.DigitalInput02;
+	DI.RAnahtarKonumu4 AT %IX.SL1.IF1.ST1.IF1.ST5.DigitalInput04;
+	DI.R_JoySag AT %IX.SL1.IF1.ST1.IF1.ST5.DigitalInput05;
+	DI.R_JoySol AT %IX.SL1.IF1.ST1.IF1.ST5.DigitalInput07;
+	DI.R_Input1 AT %IX.SL1.IF1.ST1.IF1.ST5.DigitalInput03;
+END_VAR

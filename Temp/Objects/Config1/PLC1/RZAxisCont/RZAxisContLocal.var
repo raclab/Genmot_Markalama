@@ -1,0 +1,7 @@
+VAR RETAIN
+END_VAR
+VAR CONSTANT
+END_VAR
+VAR
+	data : REAL;	(* #1"C:/projects/Genmot_Markalama_/Logical/RZAxisControl/GZ1Ax.c" #2"36" #3"15" *)
+END_VAR

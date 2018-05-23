@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tags>
+  <Tag Type="BOOLEAN" Name="Markalama_Ok_Delphi" Description="" SourceVariable="Parametreler_0.Markalama_Ok_Delphi" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="GC1_PosVelocity" Description="" SourceVariable="Eksen_Hizlari.GC1_PosVelocity" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="GRZ_PosVelocity" Description="" SourceVariable="Eksen_Hizlari.GRZ_PosVelocity" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="GRY_PosVelocity" Description="" SourceVariable="Eksen_Hizlari.GRY_PosVelocity" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="GRX_PosVelocity" Description="" SourceVariable="Eksen_Hizlari.GRX_PosVelocity" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="A_PosVelocity" Description="" SourceVariable="Eksen_Hizlari.A_PosVelocity" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="Z_PosVelocity" Description="" SourceVariable="Eksen_Hizlari.Z_PosVelocity" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="Y_PosVelocity" Description="" SourceVariable="Eksen_Hizlari.Y_PosVelocity" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="X_PosVelocity" Description="" SourceVariable="Eksen_Hizlari.X_PosVelocity" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="GC1_JogVelocity" Description="" SourceVariable="Eksen_Hizlari.GC1_JogVelocity" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="GRZ_JogVelocity" Description="" SourceVariable="Eksen_Hizlari.GRZ_JogVelocity" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="GRY_JogVelocity" Description="" SourceVariable="Eksen_Hizlari.GRY_JogVelocity" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="GRX_JogVelocity" Description="" SourceVariable="Eksen_Hizlari.GRX_JogVelocity" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="A_JogVelocity" Description="" SourceVariable="Eksen_Hizlari.A_JogVelocity" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="Z_JogVelocity" Description="" SourceVariable="Eksen_Hizlari.Z_JogVelocity" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="Y_JogVelocity" Description="" SourceVariable="Eksen_Hizlari.Y_JogVelocity" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="X_JogVelocity" Description="" SourceVariable="Eksen_Hizlari.X_JogVelocity" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="GRY_Actual_Pos_mm" Description="" SourceVariable="Actual_Pos.GRY_Actual_Pos" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="GRZ_HedefPozisyon" Description="" SourceVariable="Parametreler_0.GRZ_Position" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="GRX_HedefPozisyon" Description="" SourceVariable="Parametreler_0.GRX_Position" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="UINT16" Name="GRZ_ErrorID" Description="ErrorID of any occured error" SourceVariable="GRZAxis.Status.ErrorID" SourceProgram="" SourceDatatype="UINT" SourceDerivationBaseDatatype="UINT">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="UINT16" Name="GRY_ErrorID" Description="ErrorID of any occured error" SourceVariable="GRYAxis.Status.ErrorID" SourceProgram="" SourceDatatype="UINT" SourceDerivationBaseDatatype="UINT">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="UINT16" Name="GRX_ErrorID" Description="ErrorID of any occured error" SourceVariable="GRXAxis.Status.ErrorID" SourceProgram="" SourceDatatype="UINT" SourceDerivationBaseDatatype="UINT">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="UINT16" Name="GC2_ErrorID" Description="ErrorID of any occured error" SourceVariable="GC2Axis.Status.ErrorID" SourceProgram="" SourceDatatype="UINT" SourceDerivationBaseDatatype="UINT">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="UINT16" Name="GC1_ErrorID" Description="ErrorID of any occured error" SourceVariable="GC1Axis.Status.ErrorID" SourceProgram="" SourceDatatype="UINT" SourceDerivationBaseDatatype="UINT">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="UINT16" Name="RZ_ErrorID" Description="ErrorID of any occured error" SourceVariable="GZ1Axis.Status.ErrorID" SourceProgram="" SourceDatatype="UINT" SourceDerivationBaseDatatype="UINT">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="UINT16" Name="RY_ErrorID" Description="ErrorID of any occured error" SourceVariable="GX3Axis.Status.ErrorID" SourceProgram="" SourceDatatype="UINT" SourceDerivationBaseDatatype="UINT">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="UINT16" Name="RX_ErrorID" Description="ErrorID of any occured error" SourceVariable="GX2Axis.Status.ErrorID" SourceProgram="" SourceDatatype="UINT" SourceDerivationBaseDatatype="UINT">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="GRY_HedefPozisyon" Description="" SourceVariable="Retain.GRY_KrankAlma_Konumu" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="UINT16" Name="RA_ErrorID" Description="ErrorID of any occured error" SourceVariable="GX1Axis.Status.ErrorID" SourceProgram="" SourceDatatype="UINT" SourceDerivationBaseDatatype="UINT">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="Kripper_Kapat" Description="" SourceVariable="Parametreler_0.Kripper_Kapat" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="Kripper_Ac" Description="" SourceVariable="Parametreler_0.Kripper_Ac" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="GC1_Position" Description="target-position for MoveAbsolute-Command" SourceVariable="GC1Axis.Parameter.Position" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="GC1_MoveAbsolute" Description="move to an defined position" SourceVariable="GC1Axis.Command.MoveAbsolute" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="GC1_Act_Pos_mm" Description="" SourceVariable="Actual_Pos.GC1_Actual_Pos" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="GC2_Act_Pos_mm" Description="" SourceVariable="Actual_Pos.GC2_Actual_Pos" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="GRX_Act_Pos_mm" Description="" SourceVariable="Actual_Pos.GRX_Actual_Pos" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="GRZ_Act_Pos_mm" Description="" SourceVariable="Actual_Pos.GRZ_Actual_Pos" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="A_Act_Pos_mm" Description="" SourceVariable="Actual_Pos.RA_Actual_Pos" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="X_Act_Pos_mm" Description="" SourceVariable="Actual_Pos.RX_Actual_Pos" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="Y_Act_Pos_mm" Description="" SourceVariable="Actual_Pos.RY_Actual_Pos" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="Z_Act_Pos_mm" Description="" SourceVariable="Actual_Pos.RZ_Actual_Pos" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="A_Start_Home" Description="" SourceVariable="Parametreler_0.A_HomeStart" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="A_JogNeg" Description="" SourceVariable="Parametreler_0.A_JogNeg" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="A_JogPos" Description="" SourceVariable="Parametreler_0.A_JogPos" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="Alarm_Reset" Description="" SourceVariable="Parametreler_0.Alarm_Reset" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="GC1_HomeOk" Description="" SourceVariable="Parametreler_0.GC1_HomeOk" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="GC1_Start_Home" Description="" SourceVariable="Parametreler_0.GC1_HomeStart" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="GC1_JogNeg" Description="" SourceVariable="Parametreler_0.GC1_JogNeg" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="GC1_JogPos" Description="" SourceVariable="Parametreler_0.GC1_JogPos" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="GC2_HomeOk" Description="" SourceVariable="Parametreler_0.GC2_HomeOk" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="GC2_Start_Home" Description="" SourceVariable="Parametreler_0.GC2_HomeStart" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="GC2_JogNeg" Description="" SourceVariable="Parametreler_0.GC2_JogNeg" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="GC2_JogPos" Description="" SourceVariable="Parametreler_0.GC2_JogPos" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="GRX_HomeOk" Description="" SourceVariable="Parametreler_0.GRX_HomeOk" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="GRX_Start_Home" Description="" SourceVariable="Parametreler_0.GRX_HomeStart" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="GRX_JogNeg" Description="" SourceVariable="Parametreler_0.GRX_JogNeg" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="GRX_JogPos" Description="" SourceVariable="Parametreler_0.GRX_JogPos" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="GRY_HomeOk" Description="" SourceVariable="Parametreler_0.GRY_HomeOk" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="GRY_HomeStart" Description="" SourceVariable="Parametreler_0.GRY_HomeStart" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="GRY_JogNeg" Description="" SourceVariable="Parametreler_0.GRY_JogNeg" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="GRY_JogPos" Description="" SourceVariable="Parametreler_0.GRY_JogPos" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="GRZ_HomeOk" Description="" SourceVariable="Parametreler_0.GRZ_HomeOk" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="GRZ_Start_Home" Description="" SourceVariable="Parametreler_0.GRZ_HomeStart" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="GRZ_JogNeg" Description="" SourceVariable="Parametreler_0.GRZ_JogNeg" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="GRZ_JogPos" Description="" SourceVariable="Parametreler_0.GRZ_JogPos" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="Konveyor_Geri_Buton" Description="" SourceVariable="Parametreler_0.Konveyor_Geri_Buton" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="Konveyor_Ileri_Buton" Description="" SourceVariable="Parametreler_0.Konveyor_Ileri_Buton" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="Krank_Al" Description="" SourceVariable="Parametreler_0.Krank_Al" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="Krank_Koy" Description="" SourceVariable="Parametreler_0.Krank_Koy" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="Lazer_Start" Description="" SourceVariable="Parametreler_0.Lazer_Start" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="Lazer_Stop" Description="" SourceVariable="Parametreler_0.Lazer_Stop" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="Markalama_Ok" Description="" SourceVariable="Parametreler_0.Markalama_Ok" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="Markalama_Start" Description="" SourceVariable="Parametreler_0.Markalama_Start" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="Markalama_Git" Description="" SourceVariable="Parametreler_0.Markalamaya_Git" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="X_HomeOk" Description="" SourceVariable="Parametreler_0.X_HomeOk" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="X_Start_Home" Description="" SourceVariable="Parametreler_0.X_HomeStart" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="X_JogNeg" Description="" SourceVariable="Parametreler_0.X_JogNeg" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="X_JogPos" Description="" SourceVariable="Parametreler_0.X_JogPos" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="Y_HomeOk" Description="" SourceVariable="Parametreler_0.Y_HomeOk" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="Y_Start_Home" Description="" SourceVariable="Parametreler_0.Y_HomeStart" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="Y_JogNeg" Description="" SourceVariable="Parametreler_0.Y_JogNeg" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="Y_JogPos" Description="" SourceVariable="Parametreler_0.Y_JogPos" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="Z_HomeOk" Description="" SourceVariable="Parametreler_0.Z_HomeOk" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="Z_Start_Home" Description="" SourceVariable="Parametreler_0.Z_HomeStart" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="Z_JogNeg" Description="" SourceVariable="Parametreler_0.Z_JogNeg" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="Z_JogPos" Description="" SourceVariable="Parametreler_0.Z_JogPos" SourceProgram="" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="Dikey_Sira_Araligi" Description="" SourceVariable="Retain.Dikey_Sira_Araligi" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="UINT8" Name="Dikey_Sira_Miktari" Description="" SourceVariable="Retain.Dikey_Sira_Miktari" SourceProgram="" SourceDatatype="USINT" SourceDerivationBaseDatatype="USINT">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="GRX_KrankAlma_Konumu_2" Description="" SourceVariable="Retain.GRX_KrankAlma_Konumu_2" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="GRX_KrankAlmaKonumu" Description="" SourceVariable="Retain.GRX_KrankAlmaKonumu" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="GRX_KrankKoyma_Konumu_2" Description="" SourceVariable="Retain.GRX_KrankKoyma_Konumu_2" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="GRX_KrankKoymaKonumu" Description="" SourceVariable="Retain.GRX_KrankKoymaKonumu" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="GRZ_KrankAlma_Konumu_2" Description="" SourceVariable="Retain.GRZ_KrankAlma_Konumu_2" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="GRZ_KrankAlmaKonumu" Description="" SourceVariable="Retain.GRZ_KrankAlmaKonumu" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="GRZ_KrankKoyma_Konumu_2" Description="" SourceVariable="Retain.GRZ_KrankKoyma_Konumu_2" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="GRZ_KrankKoymaKonumu" Description="" SourceVariable="Retain.GRZ_KrankKoymaKonumu" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="INT16" Name="Hatch_Adedi" Description="" SourceVariable="Retain.Hatch_Adedi" SourceProgram="" SourceDatatype="INT" SourceDerivationBaseDatatype="INT">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="A_Markalama_Konumu" Description="" SourceVariable="Retain.RA_MarkalamaKonumu" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="X_Markalama_Konumu" Description="" SourceVariable="Retain.RX_MarkalamaKonumu" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="Y_Markalama_Konumu" Description="" SourceVariable="Retain.RY_MarkalamaKonumu" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="Z_Markalama_Konumu" Description="" SourceVariable="Retain.RZ_MarkalamaKonumu" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="FLOAT32" Name="Yatay_Sira_Araligi" Description="" SourceVariable="Retain.Yatay_Sira_Araligi" SourceProgram="" SourceDatatype="REAL" SourceDerivationBaseDatatype="REAL">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+  <Tag Type="UINT8" Name="Yatay_Sira_Miktari" Description="" SourceVariable="Retain.Yatay_Sira_Miktari" SourceProgram="" SourceDatatype="USINT" SourceDerivationBaseDatatype="USINT">
+    <Format IsVector="false" IsArrayElement="false" Index="0" />
+    <Access IsProtected="false" Read="true" Write="true" />
+    <Values Manual="false" ManualValue="" />
+    <CustomProperties />
+  </Tag>
+</Tags>

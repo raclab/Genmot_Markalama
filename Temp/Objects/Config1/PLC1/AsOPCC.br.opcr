@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServerConfig Name="AsOPCC.br" BuildDate="5/21/2018 2:41:02 PM" Version="3.0.80" VersionDate="2/4/2009" NrOfTags="104">
+  <TagPwd Pwd="" />
+  <LimitAlarms />
+  <DigitalAlarms />
+  <CustomProperties />
+  <OpcItems>
+    <Item Name="Markalama_Ok_Delphi">
+      <OPC Name="Markalama_Ok_Delphi" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.Markalama_Ok_Delphi" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="GC1_PosVelocity">
+      <OPC Name="GC1_PosVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Eksen_Hizlari.GC1_PosVelocity" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="GRZ_PosVelocity">
+      <OPC Name="GRZ_PosVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Eksen_Hizlari.GRZ_PosVelocity" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="GRY_PosVelocity">
+      <OPC Name="GRY_PosVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Eksen_Hizlari.GRY_PosVelocity" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="GRX_PosVelocity">
+      <OPC Name="GRX_PosVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Eksen_Hizlari.GRX_PosVelocity" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="A_PosVelocity">
+      <OPC Name="A_PosVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Eksen_Hizlari.A_PosVelocity" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="Z_PosVelocity">
+      <OPC Name="Z_PosVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Eksen_Hizlari.Z_PosVelocity" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="Y_PosVelocity">
+      <OPC Name="Y_PosVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Eksen_Hizlari.Y_PosVelocity" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="X_PosVelocity">
+      <OPC Name="X_PosVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Eksen_Hizlari.X_PosVelocity" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="GC1_JogVelocity">
+      <OPC Name="GC1_JogVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Eksen_Hizlari.GC1_JogVelocity" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="GRZ_JogVelocity">
+      <OPC Name="GRZ_JogVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Eksen_Hizlari.GRZ_JogVelocity" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="GRY_JogVelocity">
+      <OPC Name="GRY_JogVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Eksen_Hizlari.GRY_JogVelocity" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="GRX_JogVelocity">
+      <OPC Name="GRX_JogVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Eksen_Hizlari.GRX_JogVelocity" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="A_JogVelocity">
+      <OPC Name="A_JogVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Eksen_Hizlari.A_JogVelocity" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="Z_JogVelocity">
+      <OPC Name="Z_JogVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Eksen_Hizlari.Z_JogVelocity" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="Y_JogVelocity">
+      <OPC Name="Y_JogVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Eksen_Hizlari.Y_JogVelocity" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="X_JogVelocity">
+      <OPC Name="X_JogVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Eksen_Hizlari.X_JogVelocity" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="GRY_Actual_Pos_mm">
+      <OPC Name="GRY_Actual_Pos_mm" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Actual_Pos.GRY_Actual_Pos" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="GRZ_HedefPozisyon">
+      <OPC Name="GRZ_HedefPozisyon" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.GRZ_Position" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="GRX_HedefPozisyon">
+      <OPC Name="GRX_HedefPozisyon" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.GRX_Position" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="GRZ_ErrorID">
+      <OPC Name="GRZ_ErrorID" Type="UI2" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="GRZAxis.Status.ErrorID" Task="" DataType="u16" BitNumber="none" />
+    </Item>
+    <Item Name="GRY_ErrorID">
+      <OPC Name="GRY_ErrorID" Type="UI2" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="GRYAxis.Status.ErrorID" Task="" DataType="u16" BitNumber="none" />
+    </Item>
+    <Item Name="GRX_ErrorID">
+      <OPC Name="GRX_ErrorID" Type="UI2" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="GRXAxis.Status.ErrorID" Task="" DataType="u16" BitNumber="none" />
+    </Item>
+    <Item Name="GC2_ErrorID">
+      <OPC Name="GC2_ErrorID" Type="UI2" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="GC2Axis.Status.ErrorID" Task="" DataType="u16" BitNumber="none" />
+    </Item>
+    <Item Name="GC1_ErrorID">
+      <OPC Name="GC1_ErrorID" Type="UI2" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="GC1Axis.Status.ErrorID" Task="" DataType="u16" BitNumber="none" />
+    </Item>
+    <Item Name="RZ_ErrorID">
+      <OPC Name="RZ_ErrorID" Type="UI2" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="GZ1Axis.Status.ErrorID" Task="" DataType="u16" BitNumber="none" />
+    </Item>
+    <Item Name="RY_ErrorID">
+      <OPC Name="RY_ErrorID" Type="UI2" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="GX3Axis.Status.ErrorID" Task="" DataType="u16" BitNumber="none" />
+    </Item>
+    <Item Name="RX_ErrorID">
+      <OPC Name="RX_ErrorID" Type="UI2" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="GX2Axis.Status.ErrorID" Task="" DataType="u16" BitNumber="none" />
+    </Item>
+    <Item Name="GRY_HedefPozisyon">
+      <OPC Name="GRY_HedefPozisyon" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Retain.GRY_KrankAlma_Konumu" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="RA_ErrorID">
+      <OPC Name="RA_ErrorID" Type="UI2" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="GX1Axis.Status.ErrorID" Task="" DataType="u16" BitNumber="none" />
+    </Item>
+    <Item Name="Kripper_Kapat">
+      <OPC Name="Kripper_Kapat" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.Kripper_Kapat" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="Kripper_Ac">
+      <OPC Name="Kripper_Ac" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.Kripper_Ac" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="GC1_Position">
+      <OPC Name="GC1_Position" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="GC1Axis.Parameter.Position" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="GC1_MoveAbsolute">
+      <OPC Name="GC1_MoveAbsolute" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="GC1Axis.Command.MoveAbsolute" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="GC1_Act_Pos_mm">
+      <OPC Name="GC1_Act_Pos_mm" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Actual_Pos.GC1_Actual_Pos" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="GC2_Act_Pos_mm">
+      <OPC Name="GC2_Act_Pos_mm" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Actual_Pos.GC2_Actual_Pos" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="GRX_Act_Pos_mm">
+      <OPC Name="GRX_Act_Pos_mm" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Actual_Pos.GRX_Actual_Pos" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="GRZ_Act_Pos_mm">
+      <OPC Name="GRZ_Act_Pos_mm" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Actual_Pos.GRZ_Actual_Pos" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="A_Act_Pos_mm">
+      <OPC Name="A_Act_Pos_mm" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Actual_Pos.RA_Actual_Pos" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="X_Act_Pos_mm">
+      <OPC Name="X_Act_Pos_mm" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Actual_Pos.RX_Actual_Pos" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="Y_Act_Pos_mm">
+      <OPC Name="Y_Act_Pos_mm" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Actual_Pos.RY_Actual_Pos" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="Z_Act_Pos_mm">
+      <OPC Name="Z_Act_Pos_mm" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Actual_Pos.RZ_Actual_Pos" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="A_Start_Home">
+      <OPC Name="A_Start_Home" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.A_HomeStart" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="A_JogNeg">
+      <OPC Name="A_JogNeg" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.A_JogNeg" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="A_JogPos">
+      <OPC Name="A_JogPos" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.A_JogPos" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="Alarm_Reset">
+      <OPC Name="Alarm_Reset" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.Alarm_Reset" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="GC1_HomeOk">
+      <OPC Name="GC1_HomeOk" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.GC1_HomeOk" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="GC1_Start_Home">
+      <OPC Name="GC1_Start_Home" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.GC1_HomeStart" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="GC1_JogNeg">
+      <OPC Name="GC1_JogNeg" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.GC1_JogNeg" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="GC1_JogPos">
+      <OPC Name="GC1_JogPos" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.GC1_JogPos" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="GC2_HomeOk">
+      <OPC Name="GC2_HomeOk" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.GC2_HomeOk" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="GC2_Start_Home">
+      <OPC Name="GC2_Start_Home" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.GC2_HomeStart" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="GC2_JogNeg">
+      <OPC Name="GC2_JogNeg" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.GC2_JogNeg" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="GC2_JogPos">
+      <OPC Name="GC2_JogPos" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.GC2_JogPos" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="GRX_HomeOk">
+      <OPC Name="GRX_HomeOk" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.GRX_HomeOk" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="GRX_Start_Home">
+      <OPC Name="GRX_Start_Home" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.GRX_HomeStart" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="GRX_JogNeg">
+      <OPC Name="GRX_JogNeg" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.GRX_JogNeg" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="GRX_JogPos">
+      <OPC Name="GRX_JogPos" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.GRX_JogPos" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="GRY_HomeOk">
+      <OPC Name="GRY_HomeOk" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.GRY_HomeOk" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="GRY_HomeStart">
+      <OPC Name="GRY_HomeStart" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.GRY_HomeStart" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="GRY_JogNeg">
+      <OPC Name="GRY_JogNeg" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.GRY_JogNeg" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="GRY_JogPos">
+      <OPC Name="GRY_JogPos" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.GRY_JogPos" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="GRZ_HomeOk">
+      <OPC Name="GRZ_HomeOk" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.GRZ_HomeOk" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="GRZ_Start_Home">
+      <OPC Name="GRZ_Start_Home" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.GRZ_HomeStart" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="GRZ_JogNeg">
+      <OPC Name="GRZ_JogNeg" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.GRZ_JogNeg" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="GRZ_JogPos">
+      <OPC Name="GRZ_JogPos" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.GRZ_JogPos" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="Konveyor_Geri_Buton">
+      <OPC Name="Konveyor_Geri_Buton" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.Konveyor_Geri_Buton" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="Konveyor_Ileri_Buton">
+      <OPC Name="Konveyor_Ileri_Buton" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.Konveyor_Ileri_Buton" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="Krank_Al">
+      <OPC Name="Krank_Al" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.Krank_Al" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="Krank_Koy">
+      <OPC Name="Krank_Koy" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.Krank_Koy" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="Lazer_Start">
+      <OPC Name="Lazer_Start" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.Lazer_Start" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="Lazer_Stop">
+      <OPC Name="Lazer_Stop" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.Lazer_Stop" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="Markalama_Ok">
+      <OPC Name="Markalama_Ok" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.Markalama_Ok" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="Markalama_Start">
+      <OPC Name="Markalama_Start" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.Markalama_Start" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="Markalama_Git">
+      <OPC Name="Markalama_Git" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.Markalamaya_Git" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="X_HomeOk">
+      <OPC Name="X_HomeOk" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.X_HomeOk" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="X_Start_Home">
+      <OPC Name="X_Start_Home" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.X_HomeStart" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="X_JogNeg">
+      <OPC Name="X_JogNeg" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.X_JogNeg" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="X_JogPos">
+      <OPC Name="X_JogPos" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.X_JogPos" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="Y_HomeOk">
+      <OPC Name="Y_HomeOk" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.Y_HomeOk" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="Y_Start_Home">
+      <OPC Name="Y_Start_Home" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.Y_HomeStart" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="Y_JogNeg">
+      <OPC Name="Y_JogNeg" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.Y_JogNeg" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="Y_JogPos">
+      <OPC Name="Y_JogPos" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.Y_JogPos" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="Z_HomeOk">
+      <OPC Name="Z_HomeOk" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.Z_HomeOk" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="Z_Start_Home">
+      <OPC Name="Z_Start_Home" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.Z_HomeStart" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="Z_JogNeg">
+      <OPC Name="Z_JogNeg" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.Z_JogNeg" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="Z_JogPos">
+      <OPC Name="Z_JogPos" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Parametreler_0.Z_JogPos" Task="" DataType="boolean" BitNumber="none" />
+    </Item>
+    <Item Name="Dikey_Sira_Araligi">
+      <OPC Name="Dikey_Sira_Araligi" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Retain.Dikey_Sira_Araligi" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="Dikey_Sira_Miktari">
+      <OPC Name="Dikey_Sira_Miktari" Type="UI1" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Retain.Dikey_Sira_Miktari" Task="" DataType="u8" BitNumber="none" />
+    </Item>
+    <Item Name="GRX_KrankAlma_Konumu_2">
+      <OPC Name="GRX_KrankAlma_Konumu_2" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Retain.GRX_KrankAlma_Konumu_2" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="GRX_KrankAlmaKonumu">
+      <OPC Name="GRX_KrankAlmaKonumu" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Retain.GRX_KrankAlmaKonumu" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="GRX_KrankKoyma_Konumu_2">
+      <OPC Name="GRX_KrankKoyma_Konumu_2" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Retain.GRX_KrankKoyma_Konumu_2" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="GRX_KrankKoymaKonumu">
+      <OPC Name="GRX_KrankKoymaKonumu" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Retain.GRX_KrankKoymaKonumu" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="GRZ_KrankAlma_Konumu_2">
+      <OPC Name="GRZ_KrankAlma_Konumu_2" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Retain.GRZ_KrankAlma_Konumu_2" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="GRZ_KrankAlmaKonumu">
+      <OPC Name="GRZ_KrankAlmaKonumu" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Retain.GRZ_KrankAlmaKonumu" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="GRZ_KrankKoyma_Konumu_2">
+      <OPC Name="GRZ_KrankKoyma_Konumu_2" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Retain.GRZ_KrankKoyma_Konumu_2" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="GRZ_KrankKoymaKonumu">
+      <OPC Name="GRZ_KrankKoymaKonumu" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Retain.GRZ_KrankKoymaKonumu" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="Hatch_Adedi">
+      <OPC Name="Hatch_Adedi" Type="I2" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Retain.Hatch_Adedi" Task="" DataType="i16" BitNumber="none" />
+    </Item>
+    <Item Name="A_Markalama_Konumu">
+      <OPC Name="A_Markalama_Konumu" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Retain.RA_MarkalamaKonumu" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="X_Markalama_Konumu">
+      <OPC Name="X_Markalama_Konumu" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Retain.RX_MarkalamaKonumu" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="Y_Markalama_Konumu">
+      <OPC Name="Y_Markalama_Konumu" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Retain.RY_MarkalamaKonumu" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="Z_Markalama_Konumu">
+      <OPC Name="Z_Markalama_Konumu" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Retain.RZ_MarkalamaKonumu" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="Yatay_Sira_Araligi">
+      <OPC Name="Yatay_Sira_Araligi" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Retain.Yatay_Sira_Araligi" Task="" DataType="f32" BitNumber="none" />
+    </Item>
+    <Item Name="Yatay_Sira_Miktari">
+      <OPC Name="Yatay_Sira_Miktari" Type="UI1" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" IsManual="false" ManualValue="" IsProtected="false" />
+      <PV Name="Retain.Yatay_Sira_Miktari" Task="" DataType="u8" BitNumber="none" />
+    </Item>
+  </OpcItems>
+</ServerConfig>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0.90.36 SP18?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="DataObject" Language="Ax">grz_axisi</Object>
+    <Object Type="DataObject" Language="Apt">grz_axisa</Object>
+  </Objects>
+</Package>

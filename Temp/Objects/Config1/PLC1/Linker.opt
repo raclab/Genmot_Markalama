@@ -1,0 +1,14 @@
+PowerAx2	-o "$(AS_CPU_PATH)/PowerAx2/a.out" "$(AS_CPU_PATH)/PowerAx2/PowerAx2.o"  -G V4.1.2  -specs=I386specs -Wl,-q,-T,SG4.x -T SG4  --$$$newFormat$$$
+RAAxisCont	-o "$(AS_CPU_PATH)/RAAxisCont/a.out" "$(AS_CPU_PATH)/RAAxisCont/GX1Ax.o"  -G V4.1.2  -specs=I386specs -Wl,-q,-T,SG4.x -T SG4  --$$$newFormat$$$
+Master	-o "$(AS_CPU_PATH)/Master/a.out" "$(AS_CPU_PATH)/Master/Master.o"  -G V4.1.2  -specs=I386specs -Wl,-q,-T,SG4.x -T SG4  --$$$newFormat$$$
+Sender	-o "$(AS_CPU_PATH)/Sender/a.out" "$(AS_CPU_PATH)/Sender/SenderCyclic.o"  -G V4.1.2  -specs=I386specs -Wl,-q,-T,SG4.x -nostdlib "-Wl,$(AS_GNU_INST_PATH)/i386-elf/lib/libasiec.a" -T SG4  --$$$newFormat$$$
+RC2AxisCon	-o "$(AS_CPU_PATH)/RC2AxisCon/a.out" "$(AS_CPU_PATH)/RC2AxisCon/GC2Ax.o"  -G V4.1.2  -specs=I386specs -Wl,-q,-T,SG4.x -T SG4  --$$$newFormat$$$
+Receiver	-o "$(AS_CPU_PATH)/Receiver/a.out" "$(AS_CPU_PATH)/Receiver/ReceiverCyclic.o"  -G V4.1.2  -specs=I386specs -Wl,-q,-T,SG4.x -nostdlib "-Wl,$(AS_GNU_INST_PATH)/i386-elf/lib/libasiec.a" -T SG4  --$$$newFormat$$$
+RXAxisCont	-o "$(AS_CPU_PATH)/RXAxisCont/a.out" "$(AS_CPU_PATH)/RXAxisCont/GX2Ax.o"  -G V4.1.2  -specs=I386specs -Wl,-q,-T,SG4.x -T SG4  --$$$newFormat$$$
+GRXAxisCon	-o "$(AS_CPU_PATH)/GRXAxisCon/a.out" "$(AS_CPU_PATH)/GRXAxisCon/GRXAx.o"  -G V4.1.2  -specs=I386specs -Wl,-q,-T,SG4.x -T SG4  --$$$newFormat$$$
+GRZAxisCon	-o "$(AS_CPU_PATH)/GRZAxisCon/a.out" "$(AS_CPU_PATH)/GRZAxisCon/GRZAx.o"  -G V4.1.2  -specs=I386specs -Wl,-q,-T,SG4.x -T SG4  --$$$newFormat$$$
+PowerAx1	-o "$(AS_CPU_PATH)/PowerAx1/a.out" "$(AS_CPU_PATH)/PowerAx1/PowerAx1.o"  -G V4.1.2  -specs=I386specs -Wl,-q,-T,SG4.x -T SG4  --$$$newFormat$$$
+RZAxisCont	-o "$(AS_CPU_PATH)/RZAxisCont/a.out" "$(AS_CPU_PATH)/RZAxisCont/GZ1Ax.o"  -G V4.1.2  -specs=I386specs -Wl,-q,-T,SG4.x -T SG4  --$$$newFormat$$$
+RYAxisCont	-o "$(AS_CPU_PATH)/RYAxisCont/a.out" "$(AS_CPU_PATH)/RYAxisCont/GX3Ax.o"  -G V4.1.2  -specs=I386specs -Wl,-q,-T,SG4.x -T SG4  --$$$newFormat$$$
+GRYAxisCon	-o "$(AS_CPU_PATH)/GRYAxisCon/a.out" "$(AS_CPU_PATH)/GRYAxisCon/GRYAxisControl.o"  -G V4.1.2  -specs=I386specs -Wl,-q,-T,SG4.x -T SG4  --$$$newFormat$$$
+RC1AxisCon	-o "$(AS_CPU_PATH)/RC1AxisCon/a.out" "$(AS_CPU_PATH)/RC1AxisCon/GC1Ax.o"  -G V4.1.2  -specs=I386specs -Wl,-q,-T,SG4.x -T SG4  --$$$newFormat$$$

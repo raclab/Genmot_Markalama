@@ -1,0 +1,91 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * File: Global.var
+ * Author: Coder
+ * Created: September 22, 2013
+ ********************************************************************
+ * Global variables of project ASILAPC910
+ ********************************************************************)
+VAR RETAIN
+	Eksen_Hizlari : EksenHizlari_typ;
+END_VAR
+VAR
+	Actual_Pos : actual_pos_typ;
+END_VAR
+VAR RETAIN
+	Retain : retain_typ;
+	admin_password : UDINT;
+END_VAR
+VAR
+	admin_status_group : UINT;
+	admin_status_group2 : UINT;
+	alarmbits : ARRAY[0..63] OF BOOL;
+	DI : digitalinput_typ;
+	DQ : digitaloutput_typ;
+	GX1_Axis : ACP10AXIS_typ;
+	GX1Axis : automat_typ;
+	GX2_Axis : ACP10AXIS_typ;
+	GX2Axis : automat_typ;
+	GX3_Axis : ACP10AXIS_typ;
+	GX3Axis : automat_typ;
+	GZ1_Axis : ACP10AXIS_typ;
+	GZ1Axis : automat_typ;
+	GC1_Axis : ACP10AXIS_typ;
+	GC1Axis : automat_typ;
+	GC2_Axis : ACP10AXIS_typ;
+	GC2Axis : automat_typ;
+	GRX_Axis : ACP10AXIS_typ;
+	GRXAxis : automat_typ;
+	GRZ_Axis : ACP10AXIS_typ;
+	GRZAxis : automat_typ;
+	GRYAxis : automat_typ;
+	GRY_Axis : ACP10AXIS_typ;
+	PowerSp1 : ACP10AXIS_typ;
+	Power1Axis : automat_typ;
+	PowerSp2 : ACP10AXIS_typ;
+	Power2Axis : automat_typ;
+END_VAR
+VAR RETAIN
+	operator_password : UDINT;
+	Parametreler_0 : parametreler_typ;
+END_VAR
+VAR
+	prgname : STRING[9];
+	programname : STRING[9];
+	Screen : USINT;
+END_VAR
+VAR RETAIN
+	service_password : UDINT;
+END_VAR
+VAR
+	Passwordler : STRING[0];
+END_VAR
+VAR RETAIN
+	Sifre_Ayarlar : UDINT;
+END_VAR
+VAR
+	user_message : STRING[40];
+	Sifre_Ayarlar_Giris : BOOL;
+	Sifre_Error : BOOL;
+END_VAR
+VAR RETAIN
+	Sifre_Sistem : UDINT;
+END_VAR
+VAR
+	Sifre_Sistem_Giris : BOOL;
+END_VAR
+VAR RETAIN
+	Sifre_Temp_Screen : UDINT;
+END_VAR
+VAR
+	Sifre_Temp : UDINT;
+	GX1HomeOk : BOOL;
+	GX2HomeOk : BOOL;
+	GX3HomeOk : BOOL;
+	GZ1HomeOk : BOOL;
+	GC2HomeOk : BOOL;
+	GC1HomeOk : BOOL;
+	GRZHomeOk : BOOL;
+	GRXHomeOk : BOOL;
+END_VAR

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0.90.36 SP18?>
+<PLC xmlns="http://br-automation.co.at/AS/PLC">
+  <Objects>
+    <Object Type="File" Description="Software configuration">Cpu.sw</Object>
+    <Object Type="File" Description="Declaration of permanent variables">Cpu.per</Object>
+    <Object Type="File" Description="IO mapping file">IoMap.iom</Object>
+    <Object Type="File" Description="PV mapping file">PvMap.vvm</Object>
+    <Object Type="File" Description="Runtime configuration file">ArConfig.rtc</Object>
+    <Object Type="File" Description="CPU system configuration">sysconf.br</Object>
+    <Object Type="File" Description="CPU system configuration">sysconf.syc</Object>
+    <Object Type="File" Description="VC Mapping File">Visual.vcm</Object>
+    <Object Type="File" Description="Key mapping for PS2-Keyboard">PS2-Keyboard.dis</Object>
+    <Object Type="Package">Motion</Object>
+    <Object Type="File" Description="A new OPC Windows Server Mapping file.">LazerOpcMap.opcm</Object>
+  </Objects>
+  <CpuModules>
+    <CpuModule LocalVariablesMemory="MemoryPool" GeneratePPCode="false" HasNcOperatingSystem="true" Target="SG4" ModuleID="AR010" ClassID="5PC900.TS77-00-AR010" GccVersion="V4.1.2" OnlineConfigurationName="NewTCPIPConnection">
+      <DefaultTargetMemory Tasks="UserROM" Libraries="UserROM" DataObjects="UserROM" />
+      <DefaultTaskClass Name="Cyclic4" />
+      <IO DefaultTaskClass="Automatic" ArConfigDataModule="false" ArConfigDataModulePath="$(AS_CPU_PATH)\AS\CfgData.br" IoMapDataModule="false" IoMapDataModulePath="$(AS_CPU_PATH)\AS\IomData.br" />
+      <OS Version="4.02.0" Status="R" />
+      <Transfer DownloadMode="Overload" PromptBeforeProject="false" PromptBeforeTask="false" PackedArConfig="false" PackedIoMap="false" IgnoreTargetOnlyObjects="false" GeneratePviTransferList="true" TransferOnlyRelevantChanges="false" AllowWarmRestart="true" IgnoreBrDependencies="false" />
+      <Build />
+      <VC FirmwareVersion="V3.95.3" />
+      <OPC />
+    </CpuModule>
+  </CpuModules>
+  <Communication>
+    <OnlineConfiguration Name="NewTCPIPConnection" DeviceType="TCPIP" DeviceParameters="/IF=tcpip /LOPO=11159 /SA=1" ConnectionParameters="/RT=1000 /DAIP=192.168.137.2 /REPO=11159 /ANSL=1" Description="" />
+  </Communication>
+</PLC>

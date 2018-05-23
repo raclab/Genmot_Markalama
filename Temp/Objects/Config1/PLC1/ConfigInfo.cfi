@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0.90.36 SP18?>
+<ConfigInfo xmlns="http://br-automation.co.at/AS/BuildInfo">
+  <TaskClass Name="Cyclic#1">
+    <Task Name="PowerAx1" Disable="false" Source="PowerAx1" Language="ANSIC">
+      <File Path="C:\projects\Genmot_Markalama_\Logical\PowerAx1\PowerAx1.typ" />
+      <File Path="C:\projects\Genmot_Markalama_\Logical\PowerAx1\PowerAx1.var" />
+      <File Path="C:\projects\Genmot_Markalama_\Temp\Objects\Config1\PLC1\PowerAx1\PowerAx1Local.var" />
+    </Task>
+    <Task Name="PowerAx2" Disable="false" Source="PowerAx2" Language="ANSIC">
+      <File Path="C:\projects\Genmot_Markalama_\Logical\PowerAx2\PowerAx2.typ" />
+      <File Path="C:\projects\Genmot_Markalama_\Logical\PowerAx2\PowerAx2.var" />
+      <File Path="C:\projects\Genmot_Markalama_\Temp\Objects\Config1\PLC1\PowerAx2\PowerAx2Local.var" />
+    </Task>
+    <Task Name="RZAxisCont" Disable="false" Source="RZAxisControl" Language="ANSIC">
+      <File Path="C:\projects\Genmot_Markalama_\Logical\RZAxisControl\GZ1Ax.typ" />
+      <File Path="C:\projects\Genmot_Markalama_\Logical\RZAxisControl\GZ1Ax.var" />
+      <File Path="C:\projects\Genmot_Markalama_\Temp\Objects\Config1\PLC1\RZAxisCont\RZAxisContLocal.var" />
+    </Task>
+    <Task Name="RYAxisCont" Disable="false" Source="RYAxisControl" Language="ANSIC">
+      <File Path="C:\projects\Genmot_Markalama_\Logical\RYAxisControl\GX3Ax.typ" />
+      <File Path="C:\projects\Genmot_Markalama_\Logical\RYAxisControl\GX3Ax.var" />
+      <File Path="C:\projects\Genmot_Markalama_\Temp\Objects\Config1\PLC1\RYAxisCont\RYAxisContLocal.var" />
+    </Task>
+    <Task Name="RXAxisCont" Disable="false" Source="RXAxisControl" Language="ANSIC">
+      <File Path="C:\projects\Genmot_Markalama_\Logical\RXAxisControl\GX2Ax.typ" />
+      <File Path="C:\projects\Genmot_Markalama_\Logical\RXAxisControl\GX2Ax.var" />
+      <File Path="C:\projects\Genmot_Markalama_\Temp\Objects\Config1\PLC1\RXAxisCont\RXAxisContLocal.var" />
+    </Task>
+    <Task Name="RAAxisCont" Disable="false" Source="RAAxisControl" Language="ANSIC">
+      <File Path="C:\projects\Genmot_Markalama_\Logical\RAAxisControl\GX1Ax.typ" />
+      <File Path="C:\projects\Genmot_Markalama_\Logical\RAAxisControl\GX1Ax.var" />
+      <File Path="C:\projects\Genmot_Markalama_\Temp\Objects\Config1\PLC1\RAAxisCont\RAAxisContLocal.var" />
+    </Task>
+    <Task Name="RC1AxisCon" Disable="false" Source="RC1AxisControl" Language="ANSIC">
+      <File Path="C:\projects\Genmot_Markalama_\Logical\RC1AxisControl\GC1Ax.typ" />
+      <File Path="C:\projects\Genmot_Markalama_\Logical\RC1AxisControl\GC1Ax.var" />
+      <File Path="C:\projects\Genmot_Markalama_\Temp\Objects\Config1\PLC1\RC1AxisCon\RC1AxisConLocal.var" />
+    </Task>
+    <Task Name="RC2AxisCon" Disable="false" Source="RC2AxisControl" Language="ANSIC">
+      <File Path="C:\projects\Genmot_Markalama_\Logical\RC2AxisControl\GC2Ax.typ" />
+      <File Path="C:\projects\Genmot_Markalama_\Logical\RC2AxisControl\GC2Ax.var" />
+      <File Path="C:\projects\Genmot_Markalama_\Temp\Objects\Config1\PLC1\RC2AxisCon\RC2AxisConLocal.var" />
+    </Task>
+    <Task Name="GRXAxisCon" Disable="false" Source="GRXAxisControl" Language="ANSIC">
+      <File Path="C:\projects\Genmot_Markalama_\Logical\GRXAxisControl\GRXAx.typ" />
+      <File Path="C:\projects\Genmot_Markalama_\Logical\GRXAxisControl\GRXAx.var" />
+      <File Path="C:\projects\Genmot_Markalama_\Temp\Objects\Config1\PLC1\GRXAxisCon\GRXAxisConLocal.var" />
+    </Task>
+    <Task Name="GRZAxisCon" Disable="false" Source="GRZAxisControl" Language="ANSIC">
+      <File Path="C:\projects\Genmot_Markalama_\Logical\GRZAxisControl\GRZAx.typ" />
+      <File Path="C:\projects\Genmot_Markalama_\Logical\GRZAxisControl\GRXAx.var" />
+      <File Path="C:\projects\Genmot_Markalama_\Temp\Objects\Config1\PLC1\GRZAxisCon\GRZAxisConLocal.var" />
+    </Task>
+    <Task Name="Master" Disable="false" Source="Master" Language="ANSIC">
+      <File Path="C:\projects\Genmot_Markalama_\Logical\Master\Master.typ" />
+      <File Path="C:\projects\Genmot_Markalama_\Logical\Master\Master.var" />
+      <File Path="C:\projects\Genmot_Markalama_\Temp\Objects\Config1\PLC1\Master\MasterLocal.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass Name="Cyclic#2">
+    <Task Name="Sender" Disable="false" Source="LibDVFrame1_ST.Sender" Language="IEC">
+      <File Path="C:\projects\Genmot_Markalama_\Logical\LibDVFrame1_ST\Sender\Sender.typ" />
+      <File Path="C:\projects\Genmot_Markalama_\Logical\LibDVFrame1_ST\Sender\Sender.var" />
+    </Task>
+    <Task Name="Receiver" Disable="false" Source="LibDVFrame1_ST.Receiver" Language="IEC">
+      <File Path="C:\projects\Genmot_Markalama_\Logical\LibDVFrame1_ST\Receiver\Receiver.typ" />
+      <File Path="C:\projects\Genmot_Markalama_\Logical\LibDVFrame1_ST\Receiver\Receiver.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass Name="Cyclic#3" />
+  <TaskClass Name="Cyclic#4">
+    <Task Name="GRYAxisCon" Disable="false" Source="GRYAxisControl" Language="ANSIC">
+      <File Path="C:\projects\Genmot_Markalama_\Logical\GRYAxisControl\GRYAxisControl.typ" />
+      <File Path="C:\projects\Genmot_Markalama_\Logical\GRYAxisControl\GRYAxisControl.var" />
+      <File Path="C:\projects\Genmot_Markalama_\Temp\Objects\Config1\PLC1\GRYAxisCon\GRYAxisConLocal.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass Name="Cyclic#5" />
+  <TaskClass Name="Cyclic#6" />
+  <TaskClass Name="Cyclic#7" />
+  <TaskClass Name="Cyclic#8" />
+</ConfigInfo>

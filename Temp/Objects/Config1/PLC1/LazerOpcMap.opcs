@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServerConfig Name="LazerOpcMap.opcs" BuildDate="5/21/2018 2:41:01 PM" Version="3.0.80" VersionDate="2/4/2009">
+  <TagPwd Pwd="" />
+  <CommunicationPaths CommunicationTimeout="0" RetryTime="5" InitParam="PT=0">
+    <Connection Name="@/Pvi" Type="Pvi" ObjectDescriptor="" />
+    <Connection Name="@/Pvi/LNINA2" Type="Line" ObjectDescriptor="CD=LNINA2" />
+    <Connection Name="@/Pvi/LNINA2/TCPIP" Type="Device" ObjectDescriptor="CD=&quot;/IF=tcpip /LOPO=11159 /SA=54 &quot;" />
+    <Connection Name="@/Pvi/LNINA2/TCPIP/Station" Type="Station" ObjectDescriptor="CD=&quot;/CN=Station &quot;" />
+    <Connection Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection" Type="Cpu" ObjectDescriptor="CD=&quot;/DAIP=192.168.137.2 /RT=1000 /REPO=11159 /CKDA=1 &quot;" />
+  </CommunicationPaths>
+  <LimitAlarms />
+  <DigitalAlarms />
+  <CustomProperties />
+  <OpcItems>
+    <Item Name="GC1_MoveAbsolute">
+      <OPC Name="GC1_MoveAbsolute" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/GC1Axis.Command.MoveAbsolute" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=GC1Axis.Command.MoveAbsolute AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GC1_Position">
+      <OPC Name="GC1_Position" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/GC1Axis.Parameter.Position" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=GC1Axis.Parameter.Position AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Markalama_Ok_Delphi">
+      <OPC Name="Markalama_Ok_Delphi" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.Markalama_Ok_Delphi" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.Markalama_Ok_Delphi AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="A_JogVelocity">
+      <OPC Name="A_JogVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Eksen_Hizlari.A_JogVelocity" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Eksen_Hizlari.A_JogVelocity AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="A_PosVelocity">
+      <OPC Name="A_PosVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Eksen_Hizlari.A_PosVelocity" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Eksen_Hizlari.A_PosVelocity AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GC1_JogVelocity">
+      <OPC Name="GC1_JogVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Eksen_Hizlari.GC1_JogVelocity" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Eksen_Hizlari.GC1_JogVelocity AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GC1_PosVelocity">
+      <OPC Name="GC1_PosVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Eksen_Hizlari.GC1_PosVelocity" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Eksen_Hizlari.GC1_PosVelocity AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRX_JogVelocity">
+      <OPC Name="GRX_JogVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Eksen_Hizlari.GRX_JogVelocity" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Eksen_Hizlari.GRX_JogVelocity AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRX_PosVelocity">
+      <OPC Name="GRX_PosVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Eksen_Hizlari.GRX_PosVelocity" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Eksen_Hizlari.GRX_PosVelocity AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRY_JogVelocity">
+      <OPC Name="GRY_JogVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Eksen_Hizlari.GRY_JogVelocity" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Eksen_Hizlari.GRY_JogVelocity AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRY_PosVelocity">
+      <OPC Name="GRY_PosVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Eksen_Hizlari.GRY_PosVelocity" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Eksen_Hizlari.GRY_PosVelocity AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRZ_JogVelocity">
+      <OPC Name="GRZ_JogVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Eksen_Hizlari.GRZ_JogVelocity" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Eksen_Hizlari.GRZ_JogVelocity AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRZ_PosVelocity">
+      <OPC Name="GRZ_PosVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Eksen_Hizlari.GRZ_PosVelocity" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Eksen_Hizlari.GRZ_PosVelocity AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="X_JogVelocity">
+      <OPC Name="X_JogVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Eksen_Hizlari.X_JogVelocity" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Eksen_Hizlari.X_JogVelocity AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="X_PosVelocity">
+      <OPC Name="X_PosVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Eksen_Hizlari.X_PosVelocity" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Eksen_Hizlari.X_PosVelocity AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Y_JogVelocity">
+      <OPC Name="Y_JogVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Eksen_Hizlari.Y_JogVelocity" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Eksen_Hizlari.Y_JogVelocity AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Y_PosVelocity">
+      <OPC Name="Y_PosVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Eksen_Hizlari.Y_PosVelocity" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Eksen_Hizlari.Y_PosVelocity AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Z_JogVelocity">
+      <OPC Name="Z_JogVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Eksen_Hizlari.Z_JogVelocity" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Eksen_Hizlari.Z_JogVelocity AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Z_PosVelocity">
+      <OPC Name="Z_PosVelocity" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Eksen_Hizlari.Z_PosVelocity" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Eksen_Hizlari.Z_PosVelocity AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRY_Actual_Pos_mm">
+      <OPC Name="GRY_Actual_Pos_mm" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Actual_Pos.GRY_Actual_Pos" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Actual_Pos.GRY_Actual_Pos AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRY_HedefPozisyon">
+      <OPC Name="GRY_HedefPozisyon" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Retain.GRY_KrankAlma_Konumu" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Retain.GRY_KrankAlma_Konumu AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRX_HedefPozisyon">
+      <OPC Name="GRX_HedefPozisyon" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.GRX_Position" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Parametreler_0.GRX_Position AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRZ_HedefPozisyon">
+      <OPC Name="GRZ_HedefPozisyon" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.GRZ_Position" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Parametreler_0.GRZ_Position AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GC1_ErrorID">
+      <OPC Name="GC1_ErrorID" Type="UI2" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/GC1Axis.Status.ErrorID" Type="Pvar" ObjectDescriptor="VT=u16 VN=1 VL=2 CD=GC1Axis.Status.ErrorID AT=rw RF=1000" LinkDescriptor="VT=u16 VN=1 VL=2 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GC2_ErrorID">
+      <OPC Name="GC2_ErrorID" Type="UI2" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/GC2Axis.Status.ErrorID" Type="Pvar" ObjectDescriptor="VT=u16 VN=1 VL=2 CD=GC2Axis.Status.ErrorID AT=rw RF=1000" LinkDescriptor="VT=u16 VN=1 VL=2 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRX_ErrorID">
+      <OPC Name="GRX_ErrorID" Type="UI2" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/GRXAxis.Status.ErrorID" Type="Pvar" ObjectDescriptor="VT=u16 VN=1 VL=2 CD=GRXAxis.Status.ErrorID AT=rw RF=1000" LinkDescriptor="VT=u16 VN=1 VL=2 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRY_ErrorID">
+      <OPC Name="GRY_ErrorID" Type="UI2" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/GRYAxis.Status.ErrorID" Type="Pvar" ObjectDescriptor="VT=u16 VN=1 VL=2 CD=GRYAxis.Status.ErrorID AT=rw RF=1000" LinkDescriptor="VT=u16 VN=1 VL=2 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRZ_ErrorID">
+      <OPC Name="GRZ_ErrorID" Type="UI2" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/GRZAxis.Status.ErrorID" Type="Pvar" ObjectDescriptor="VT=u16 VN=1 VL=2 CD=GRZAxis.Status.ErrorID AT=rw RF=1000" LinkDescriptor="VT=u16 VN=1 VL=2 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Kripper_Ac">
+      <OPC Name="Kripper_Ac" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.Kripper_Ac" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.Kripper_Ac AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Kripper_Kapat">
+      <OPC Name="Kripper_Kapat" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.Kripper_Kapat" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.Kripper_Kapat AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="RA_ErrorID">
+      <OPC Name="RA_ErrorID" Type="UI2" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/GX1Axis.Status.ErrorID" Type="Pvar" ObjectDescriptor="VT=u16 VN=1 VL=2 CD=GX1Axis.Status.ErrorID AT=rw RF=1000" LinkDescriptor="VT=u16 VN=1 VL=2 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="RX_ErrorID">
+      <OPC Name="RX_ErrorID" Type="UI2" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/GX2Axis.Status.ErrorID" Type="Pvar" ObjectDescriptor="VT=u16 VN=1 VL=2 CD=GX2Axis.Status.ErrorID AT=rw RF=1000" LinkDescriptor="VT=u16 VN=1 VL=2 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="RY_ErrorID">
+      <OPC Name="RY_ErrorID" Type="UI2" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/GX3Axis.Status.ErrorID" Type="Pvar" ObjectDescriptor="VT=u16 VN=1 VL=2 CD=GX3Axis.Status.ErrorID AT=rw RF=1000" LinkDescriptor="VT=u16 VN=1 VL=2 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="RZ_ErrorID">
+      <OPC Name="RZ_ErrorID" Type="UI2" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/GZ1Axis.Status.ErrorID" Type="Pvar" ObjectDescriptor="VT=u16 VN=1 VL=2 CD=GZ1Axis.Status.ErrorID AT=rw RF=1000" LinkDescriptor="VT=u16 VN=1 VL=2 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Markalama_Git">
+      <OPC Name="Markalama_Git" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.Markalamaya_Git" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.Markalamaya_Git AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Markalama_Start">
+      <OPC Name="Markalama_Start" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.Markalama_Start" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.Markalama_Start AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Markalama_Ok">
+      <OPC Name="Markalama_Ok" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.Markalama_Ok" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.Markalama_Ok AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRY_JogPos">
+      <OPC Name="GRY_JogPos" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.GRY_JogPos" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.GRY_JogPos AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRY_JogNeg">
+      <OPC Name="GRY_JogNeg" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.GRY_JogNeg" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.GRY_JogNeg AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRY_HomeStart">
+      <OPC Name="GRY_HomeStart" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.GRY_HomeStart" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.GRY_HomeStart AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRY_HomeOk">
+      <OPC Name="GRY_HomeOk" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.GRY_HomeOk" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.GRY_HomeOk AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Konveyor_Geri_Buton">
+      <OPC Name="Konveyor_Geri_Buton" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.Konveyor_Geri_Buton" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.Konveyor_Geri_Buton AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Konveyor_Ileri_Buton">
+      <OPC Name="Konveyor_Ileri_Buton" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.Konveyor_Ileri_Buton" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.Konveyor_Ileri_Buton AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Dikey_Sira_Araligi">
+      <OPC Name="Dikey_Sira_Araligi" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Retain.Dikey_Sira_Araligi" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Retain.Dikey_Sira_Araligi AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Dikey_Sira_Miktari">
+      <OPC Name="Dikey_Sira_Miktari" Type="UI1" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Retain.Dikey_Sira_Miktari" Type="Pvar" ObjectDescriptor="VT=u8 VN=1 VL=1 CD=Retain.Dikey_Sira_Miktari AT=rw RF=1000" LinkDescriptor="VT=u8 VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Yatay_Sira_Araligi">
+      <OPC Name="Yatay_Sira_Araligi" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Retain.Yatay_Sira_Araligi" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Retain.Yatay_Sira_Araligi AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Yatay_Sira_Miktari">
+      <OPC Name="Yatay_Sira_Miktari" Type="UI1" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Retain.Yatay_Sira_Miktari" Type="Pvar" ObjectDescriptor="VT=u8 VN=1 VL=1 CD=Retain.Yatay_Sira_Miktari AT=rw RF=1000" LinkDescriptor="VT=u8 VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRX_KrankAlma_Konumu_2">
+      <OPC Name="GRX_KrankAlma_Konumu_2" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Retain.GRX_KrankAlma_Konumu_2" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Retain.GRX_KrankAlma_Konumu_2 AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRX_KrankKoyma_Konumu_2">
+      <OPC Name="GRX_KrankKoyma_Konumu_2" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Retain.GRX_KrankKoyma_Konumu_2" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Retain.GRX_KrankKoyma_Konumu_2 AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRZ_KrankAlma_Konumu_2">
+      <OPC Name="GRZ_KrankAlma_Konumu_2" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Retain.GRZ_KrankAlma_Konumu_2" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Retain.GRZ_KrankAlma_Konumu_2 AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRZ_KrankKoyma_Konumu_2">
+      <OPC Name="GRZ_KrankKoyma_Konumu_2" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Retain.GRZ_KrankKoyma_Konumu_2" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Retain.GRZ_KrankKoyma_Konumu_2 AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Krank_Koy">
+      <OPC Name="Krank_Koy" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.Krank_Koy" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.Krank_Koy AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRX_KrankAlmaKonumu">
+      <OPC Name="GRX_KrankAlmaKonumu" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Retain.GRX_KrankAlmaKonumu" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Retain.GRX_KrankAlmaKonumu AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRX_KrankKoymaKonumu">
+      <OPC Name="GRX_KrankKoymaKonumu" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Retain.GRX_KrankKoymaKonumu" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Retain.GRX_KrankKoymaKonumu AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRZ_KrankAlmaKonumu">
+      <OPC Name="GRZ_KrankAlmaKonumu" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Retain.GRZ_KrankAlmaKonumu" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Retain.GRZ_KrankAlmaKonumu AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRZ_KrankKoymaKonumu">
+      <OPC Name="GRZ_KrankKoymaKonumu" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Retain.GRZ_KrankKoymaKonumu" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Retain.GRZ_KrankKoymaKonumu AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="A_Act_Pos_mm">
+      <OPC Name="A_Act_Pos_mm" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Actual_Pos.RA_Actual_Pos" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Actual_Pos.RA_Actual_Pos AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="A_JogNeg">
+      <OPC Name="A_JogNeg" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.A_JogNeg" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.A_JogNeg AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="A_JogPos">
+      <OPC Name="A_JogPos" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.A_JogPos" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.A_JogPos AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="A_Markalama_Konumu">
+      <OPC Name="A_Markalama_Konumu" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Retain.RA_MarkalamaKonumu" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Retain.RA_MarkalamaKonumu AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="A_Start_Home">
+      <OPC Name="A_Start_Home" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.A_HomeStart" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.A_HomeStart AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Alarm_Reset">
+      <OPC Name="Alarm_Reset" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.Alarm_Reset" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.Alarm_Reset AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GC1_Act_Pos_mm">
+      <OPC Name="GC1_Act_Pos_mm" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Actual_Pos.GC1_Actual_Pos" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Actual_Pos.GC1_Actual_Pos AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GC1_HomeOk">
+      <OPC Name="GC1_HomeOk" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.GC1_HomeOk" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.GC1_HomeOk AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GC1_JogNeg">
+      <OPC Name="GC1_JogNeg" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.GC1_JogNeg" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.GC1_JogNeg AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GC1_JogPos">
+      <OPC Name="GC1_JogPos" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.GC1_JogPos" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.GC1_JogPos AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GC1_Start_Home">
+      <OPC Name="GC1_Start_Home" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.GC1_HomeStart" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.GC1_HomeStart AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GC2_Act_Pos_mm">
+      <OPC Name="GC2_Act_Pos_mm" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Actual_Pos.GC2_Actual_Pos" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Actual_Pos.GC2_Actual_Pos AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GC2_HomeOk">
+      <OPC Name="GC2_HomeOk" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.GC2_HomeOk" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.GC2_HomeOk AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GC2_JogNeg">
+      <OPC Name="GC2_JogNeg" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.GC2_JogNeg" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.GC2_JogNeg AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GC2_JogPos">
+      <OPC Name="GC2_JogPos" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.GC2_JogPos" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.GC2_JogPos AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GC2_Start_Home">
+      <OPC Name="GC2_Start_Home" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.GC2_HomeStart" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.GC2_HomeStart AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRX_Act_Pos_mm">
+      <OPC Name="GRX_Act_Pos_mm" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Actual_Pos.GRX_Actual_Pos" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Actual_Pos.GRX_Actual_Pos AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRX_HomeOk">
+      <OPC Name="GRX_HomeOk" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.GRX_HomeOk" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.GRX_HomeOk AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRX_JogNeg">
+      <OPC Name="GRX_JogNeg" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.GRX_JogNeg" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.GRX_JogNeg AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRX_JogPos">
+      <OPC Name="GRX_JogPos" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.GRX_JogPos" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.GRX_JogPos AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRX_Start_Home">
+      <OPC Name="GRX_Start_Home" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.GRX_HomeStart" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.GRX_HomeStart AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRZ_Act_Pos_mm">
+      <OPC Name="GRZ_Act_Pos_mm" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Actual_Pos.GRZ_Actual_Pos" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Actual_Pos.GRZ_Actual_Pos AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRZ_HomeOk">
+      <OPC Name="GRZ_HomeOk" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.GRZ_HomeOk" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.GRZ_HomeOk AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRZ_JogNeg">
+      <OPC Name="GRZ_JogNeg" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.GRZ_JogNeg" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.GRZ_JogNeg AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRZ_JogPos">
+      <OPC Name="GRZ_JogPos" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.GRZ_JogPos" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.GRZ_JogPos AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="GRZ_Start_Home">
+      <OPC Name="GRZ_Start_Home" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.GRZ_HomeStart" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.GRZ_HomeStart AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Hatch_Adedi">
+      <OPC Name="Hatch_Adedi" Type="I2" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Retain.Hatch_Adedi" Type="Pvar" ObjectDescriptor="VT=i16 VN=1 VL=2 CD=Retain.Hatch_Adedi AT=rw RF=1000" LinkDescriptor="VT=i16 VN=1 VL=2 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Krank_Al">
+      <OPC Name="Krank_Al" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.Krank_Al" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.Krank_Al AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Lazer_Start">
+      <OPC Name="Lazer_Start" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.Lazer_Start" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.Lazer_Start AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Lazer_Stop">
+      <OPC Name="Lazer_Stop" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.Lazer_Stop" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.Lazer_Stop AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="X_Act_Pos_mm">
+      <OPC Name="X_Act_Pos_mm" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Actual_Pos.RX_Actual_Pos" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Actual_Pos.RX_Actual_Pos AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="X_HomeOk">
+      <OPC Name="X_HomeOk" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.X_HomeOk" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.X_HomeOk AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="X_JogNeg">
+      <OPC Name="X_JogNeg" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.X_JogNeg" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.X_JogNeg AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="X_JogPos">
+      <OPC Name="X_JogPos" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.X_JogPos" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.X_JogPos AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="X_Markalama_Konumu">
+      <OPC Name="X_Markalama_Konumu" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Retain.RX_MarkalamaKonumu" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Retain.RX_MarkalamaKonumu AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="X_Start_Home">
+      <OPC Name="X_Start_Home" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.X_HomeStart" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.X_HomeStart AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Y_Act_Pos_mm">
+      <OPC Name="Y_Act_Pos_mm" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Actual_Pos.RY_Actual_Pos" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Actual_Pos.RY_Actual_Pos AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Y_HomeOk">
+      <OPC Name="Y_HomeOk" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.Y_HomeOk" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.Y_HomeOk AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Y_JogNeg">
+      <OPC Name="Y_JogNeg" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.Y_JogNeg" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.Y_JogNeg AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Y_JogPos">
+      <OPC Name="Y_JogPos" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.Y_JogPos" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.Y_JogPos AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Y_Markalama_Konumu">
+      <OPC Name="Y_Markalama_Konumu" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Retain.RY_MarkalamaKonumu" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Retain.RY_MarkalamaKonumu AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Y_Start_Home">
+      <OPC Name="Y_Start_Home" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.Y_HomeStart" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.Y_HomeStart AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Z_Act_Pos_mm">
+      <OPC Name="Z_Act_Pos_mm" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Actual_Pos.RZ_Actual_Pos" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Actual_Pos.RZ_Actual_Pos AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Z_HomeOk">
+      <OPC Name="Z_HomeOk" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.Z_HomeOk" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.Z_HomeOk AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Z_JogNeg">
+      <OPC Name="Z_JogNeg" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.Z_JogNeg" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.Z_JogNeg AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Z_JogPos">
+      <OPC Name="Z_JogPos" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.Z_JogPos" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.Z_JogPos AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Z_Markalama_Konumu">
+      <OPC Name="Z_Markalama_Konumu" Type="R4" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Retain.RZ_MarkalamaKonumu" Type="Pvar" ObjectDescriptor="VT=f32 VN=1 VL=4 CD=Retain.RZ_MarkalamaKonumu AT=rw RF=1000" LinkDescriptor="VT=f32 VN=1 VL=4 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+    <Item Name="Z_Start_Home">
+      <OPC Name="Z_Start_Home" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+      <PVI Name="@/Pvi/LNINA2/TCPIP/Station/NewTCPIPConnection/Parametreler_0.Z_HomeStart" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Parametreler_0.Z_HomeStart AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+    </Item>
+  </OpcItems>
+</ServerConfig>

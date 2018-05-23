@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0.90.36 SP18?>
+<Diagnosis ConnectionString='NCMGR="acp10";NCVER="2401";IFTYP="Powerlink";NCOBJNAM="GRX_Axis";OBJTYP="ncAXIS";CHL="2";ADDR="SL1.IF1.ST11";IP_MOD="grx_axisi";'>
+<Watch>
+  <Row Parameter="network.init" Value="ncFALSE" />
+  <Row Parameter="network.service.data_text" Value="0" />
+  <Row Parameter="network.service.request.par_id" Value="0" />
+  <Row Parameter="network.service.response.par_id" Value="0" />
+  <Row Parameter="monitor.s" Value="0" Unit="Units" />
+  <Row Parameter="monitor.v" Value="0" Unit="Units/s" />
+  <Row Parameter="message.count.error" Value="0" />
+  <Row Parameter="message.count.warning" Value="0" />
+  <Row Parameter="message.record.par_id" Value="ParId" />
+  <Row Parameter="message.record.number" Value="ErrorNbrUI2" />
+  <Row Parameter="message.record.info" Value="ExtraInfo" />
+</Watch>
+<Action>
+  <Row Subject="ncBASIS_MOVE" Action="ncINIT" />
+  <Row Subject="ncCONTROLLER" Action="ncINIT" />
+  <Row Subject="ncCONTROLLER" Action="ncSWITCH_OFF" />
+  <Row Subject="ncCONTROLLER" Action="ncSWITCH_ON" />
+  <Row Subject="ncGLOBAL" Action="ncINIT" />
+  <Row Subject="ncHOMING" Action="ncSTART" />
+  <Row Subject="ncLIMITS" Action="ncINIT" />
+  <Row Subject="ncREL_MOVE" Action="ncSTART" />
+  <Row Subject="ncSERVICE" Action="ncREAD + ncDATA_TEXT" />
+  <Row Subject="ncSERVICE" Action="ncSET + ncDATA_TEXT" />
+  <Row Subject="ncSIMULATION" Action="ncSWITCH_OFF" />
+  <Row Subject="ncSIMULATION" Action="ncSWITCH_ON" />
+</Action>
+</Diagnosis>

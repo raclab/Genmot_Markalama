@@ -1,0 +1,842 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <CommunicationPath>
+    <Pvi CommunicationTimeout="0" ProcessTimeout="0" RemoutePvi="false" IpAddress="127.0.0.1" PortNumber="20000" Others="" />
+    <Linie Type="LNINA2" Name="LNINA2" CFG="" Others="" />
+    <Device Type="Tcpip" Name="TCPIP" IF="tcpip" BD="57600" RS="232" PA="1" CNO="0" IT="40" BI="1598" MDA="32" SA="54" CMODE="11" CT="20" MC="15" LOPO="11159" MO="'Modem description see Control Panel'" TN="'+90909090909'" MR="INFINITE" RI="60" FF="nw_load.bin" FC="nw_pb_32.br" CB="2" RC="3" TE="3000" TQ="3000" SR="0" RETRY="3" DA="2" TO="100" BA="851968" Others="" />
+    <Station CN="Station" MODE="SPS" DAIP="" PN="502" Others="" />
+    <Cpu Name="NewTCPIPConnection" CN="" SP="" RT="1000" DA="" DAIP="192.168.137.2" RW="0" REPO="11159" CKDA="1" Others="" />
+  </CommunicationPath>
+  <Tag Name="GC1_MoveAbsolute" Scope="">
+    <PVI Name="GC1Axis.Command.MoveAbsolute" Path="GC1Axis.Command.MoveAbsolute" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="GC1Axis.Command.MoveAbsolute" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GC1_Position" Scope="">
+    <PVI Name="GC1Axis.Parameter.Position" Path="GC1Axis.Parameter.Position" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="GC1Axis.Parameter.Position" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Markalama_Ok_Delphi" Scope="">
+    <PVI Name="Parametreler_0.Markalama_Ok_Delphi" Path="Parametreler_0.Markalama_Ok_Delphi" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.Markalama_Ok_Delphi" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="A_JogVelocity" Scope="">
+    <PVI Name="Eksen_Hizlari.A_JogVelocity" Path="Eksen_Hizlari.A_JogVelocity" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Eksen_Hizlari.A_JogVelocity" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="A_PosVelocity" Scope="">
+    <PVI Name="Eksen_Hizlari.A_PosVelocity" Path="Eksen_Hizlari.A_PosVelocity" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Eksen_Hizlari.A_PosVelocity" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GC1_JogVelocity" Scope="">
+    <PVI Name="Eksen_Hizlari.GC1_JogVelocity" Path="Eksen_Hizlari.GC1_JogVelocity" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Eksen_Hizlari.GC1_JogVelocity" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GC1_PosVelocity" Scope="">
+    <PVI Name="Eksen_Hizlari.GC1_PosVelocity" Path="Eksen_Hizlari.GC1_PosVelocity" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Eksen_Hizlari.GC1_PosVelocity" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRX_JogVelocity" Scope="">
+    <PVI Name="Eksen_Hizlari.GRX_JogVelocity" Path="Eksen_Hizlari.GRX_JogVelocity" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Eksen_Hizlari.GRX_JogVelocity" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRX_PosVelocity" Scope="">
+    <PVI Name="Eksen_Hizlari.GRX_PosVelocity" Path="Eksen_Hizlari.GRX_PosVelocity" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Eksen_Hizlari.GRX_PosVelocity" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRY_JogVelocity" Scope="">
+    <PVI Name="Eksen_Hizlari.GRY_JogVelocity" Path="Eksen_Hizlari.GRY_JogVelocity" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Eksen_Hizlari.GRY_JogVelocity" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRY_PosVelocity" Scope="">
+    <PVI Name="Eksen_Hizlari.GRY_PosVelocity" Path="Eksen_Hizlari.GRY_PosVelocity" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Eksen_Hizlari.GRY_PosVelocity" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRZ_JogVelocity" Scope="">
+    <PVI Name="Eksen_Hizlari.GRZ_JogVelocity" Path="Eksen_Hizlari.GRZ_JogVelocity" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Eksen_Hizlari.GRZ_JogVelocity" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRZ_PosVelocity" Scope="">
+    <PVI Name="Eksen_Hizlari.GRZ_PosVelocity" Path="Eksen_Hizlari.GRZ_PosVelocity" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Eksen_Hizlari.GRZ_PosVelocity" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="X_JogVelocity" Scope="">
+    <PVI Name="Eksen_Hizlari.X_JogVelocity" Path="Eksen_Hizlari.X_JogVelocity" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Eksen_Hizlari.X_JogVelocity" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="X_PosVelocity" Scope="">
+    <PVI Name="Eksen_Hizlari.X_PosVelocity" Path="Eksen_Hizlari.X_PosVelocity" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Eksen_Hizlari.X_PosVelocity" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Y_JogVelocity" Scope="">
+    <PVI Name="Eksen_Hizlari.Y_JogVelocity" Path="Eksen_Hizlari.Y_JogVelocity" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Eksen_Hizlari.Y_JogVelocity" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Y_PosVelocity" Scope="">
+    <PVI Name="Eksen_Hizlari.Y_PosVelocity" Path="Eksen_Hizlari.Y_PosVelocity" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Eksen_Hizlari.Y_PosVelocity" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Z_JogVelocity" Scope="">
+    <PVI Name="Eksen_Hizlari.Z_JogVelocity" Path="Eksen_Hizlari.Z_JogVelocity" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Eksen_Hizlari.Z_JogVelocity" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Z_PosVelocity" Scope="">
+    <PVI Name="Eksen_Hizlari.Z_PosVelocity" Path="Eksen_Hizlari.Z_PosVelocity" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Eksen_Hizlari.Z_PosVelocity" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRY_Actual_Pos_mm" Scope="">
+    <PVI Name="Actual_Pos.GRY_Actual_Pos" Path="Actual_Pos.GRY_Actual_Pos" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Actual_Pos.GRY_Actual_Pos" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRY_HedefPozisyon" Scope="">
+    <PVI Name="Retain.GRY_KrankAlma_Konumu" Path="Retain.GRY_KrankAlma_Konumu" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Retain.GRY_KrankAlma_Konumu" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRX_HedefPozisyon" Scope="">
+    <PVI Name="Parametreler_0.GRX_Position" Path="Parametreler_0.GRX_Position" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Parametreler_0.GRX_Position" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRZ_HedefPozisyon" Scope="">
+    <PVI Name="Parametreler_0.GRZ_Position" Path="Parametreler_0.GRZ_Position" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Parametreler_0.GRZ_Position" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GC1_ErrorID" Scope="">
+    <PVI Name="GC1Axis.Status.ErrorID" Path="GC1Axis.Status.ErrorID" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="u16" VN="1" VL="2" CD="GC1Axis.Status.ErrorID" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GC2_ErrorID" Scope="">
+    <PVI Name="GC2Axis.Status.ErrorID" Path="GC2Axis.Status.ErrorID" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="u16" VN="1" VL="2" CD="GC2Axis.Status.ErrorID" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRX_ErrorID" Scope="">
+    <PVI Name="GRXAxis.Status.ErrorID" Path="GRXAxis.Status.ErrorID" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="u16" VN="1" VL="2" CD="GRXAxis.Status.ErrorID" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRY_ErrorID" Scope="">
+    <PVI Name="GRYAxis.Status.ErrorID" Path="GRYAxis.Status.ErrorID" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="u16" VN="1" VL="2" CD="GRYAxis.Status.ErrorID" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRZ_ErrorID" Scope="">
+    <PVI Name="GRZAxis.Status.ErrorID" Path="GRZAxis.Status.ErrorID" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="u16" VN="1" VL="2" CD="GRZAxis.Status.ErrorID" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Kripper_Ac" Scope="">
+    <PVI Name="Parametreler_0.Kripper_Ac" Path="Parametreler_0.Kripper_Ac" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.Kripper_Ac" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Kripper_Kapat" Scope="">
+    <PVI Name="Parametreler_0.Kripper_Kapat" Path="Parametreler_0.Kripper_Kapat" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.Kripper_Kapat" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="RA_ErrorID" Scope="">
+    <PVI Name="GX1Axis.Status.ErrorID" Path="GX1Axis.Status.ErrorID" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="u16" VN="1" VL="2" CD="GX1Axis.Status.ErrorID" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="RX_ErrorID" Scope="">
+    <PVI Name="GX2Axis.Status.ErrorID" Path="GX2Axis.Status.ErrorID" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="u16" VN="1" VL="2" CD="GX2Axis.Status.ErrorID" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="RY_ErrorID" Scope="">
+    <PVI Name="GX3Axis.Status.ErrorID" Path="GX3Axis.Status.ErrorID" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="u16" VN="1" VL="2" CD="GX3Axis.Status.ErrorID" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="RZ_ErrorID" Scope="">
+    <PVI Name="GZ1Axis.Status.ErrorID" Path="GZ1Axis.Status.ErrorID" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="u16" VN="1" VL="2" CD="GZ1Axis.Status.ErrorID" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Markalama_Git" Scope="">
+    <PVI Name="Parametreler_0.Markalamaya_Git" Path="Parametreler_0.Markalamaya_Git" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.Markalamaya_Git" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Markalama_Start" Scope="">
+    <PVI Name="Parametreler_0.Markalama_Start" Path="Parametreler_0.Markalama_Start" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.Markalama_Start" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Markalama_Ok" Scope="">
+    <PVI Name="Parametreler_0.Markalama_Ok" Path="Parametreler_0.Markalama_Ok" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.Markalama_Ok" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRY_JogPos" Scope="">
+    <PVI Name="Parametreler_0.GRY_JogPos" Path="Parametreler_0.GRY_JogPos" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.GRY_JogPos" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRY_JogNeg" Scope="">
+    <PVI Name="Parametreler_0.GRY_JogNeg" Path="Parametreler_0.GRY_JogNeg" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.GRY_JogNeg" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRY_HomeStart" Scope="">
+    <PVI Name="Parametreler_0.GRY_HomeStart" Path="Parametreler_0.GRY_HomeStart" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.GRY_HomeStart" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRY_HomeOk" Scope="">
+    <PVI Name="Parametreler_0.GRY_HomeOk" Path="Parametreler_0.GRY_HomeOk" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.GRY_HomeOk" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Konveyor_Geri_Buton" Scope="">
+    <PVI Name="Parametreler_0.Konveyor_Geri_Buton" Path="Parametreler_0.Konveyor_Geri_Buton" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.Konveyor_Geri_Buton" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Konveyor_Ileri_Buton" Scope="">
+    <PVI Name="Parametreler_0.Konveyor_Ileri_Buton" Path="Parametreler_0.Konveyor_Ileri_Buton" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.Konveyor_Ileri_Buton" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Dikey_Sira_Araligi" Scope="">
+    <PVI Name="Retain.Dikey_Sira_Araligi" Path="Retain.Dikey_Sira_Araligi" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Retain.Dikey_Sira_Araligi" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Dikey_Sira_Miktari" Scope="">
+    <PVI Name="Retain.Dikey_Sira_Miktari" Path="Retain.Dikey_Sira_Miktari" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="u8" VN="1" VL="1" CD="Retain.Dikey_Sira_Miktari" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Yatay_Sira_Araligi" Scope="">
+    <PVI Name="Retain.Yatay_Sira_Araligi" Path="Retain.Yatay_Sira_Araligi" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Retain.Yatay_Sira_Araligi" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Yatay_Sira_Miktari" Scope="">
+    <PVI Name="Retain.Yatay_Sira_Miktari" Path="Retain.Yatay_Sira_Miktari" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="u8" VN="1" VL="1" CD="Retain.Yatay_Sira_Miktari" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRX_KrankAlma_Konumu_2" Scope="">
+    <PVI Name="Retain.GRX_KrankAlma_Konumu_2" Path="Retain.GRX_KrankAlma_Konumu_2" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Retain.GRX_KrankAlma_Konumu_2" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRX_KrankKoyma_Konumu_2" Scope="">
+    <PVI Name="Retain.GRX_KrankKoyma_Konumu_2" Path="Retain.GRX_KrankKoyma_Konumu_2" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Retain.GRX_KrankKoyma_Konumu_2" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRZ_KrankAlma_Konumu_2" Scope="">
+    <PVI Name="Retain.GRZ_KrankAlma_Konumu_2" Path="Retain.GRZ_KrankAlma_Konumu_2" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Retain.GRZ_KrankAlma_Konumu_2" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRZ_KrankKoyma_Konumu_2" Scope="">
+    <PVI Name="Retain.GRZ_KrankKoyma_Konumu_2" Path="Retain.GRZ_KrankKoyma_Konumu_2" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Retain.GRZ_KrankKoyma_Konumu_2" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Krank_Koy" Scope="">
+    <PVI Name="Parametreler_0.Krank_Koy" Path="Parametreler_0.Krank_Koy" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.Krank_Koy" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRX_KrankAlmaKonumu" Scope="">
+    <PVI Name="Retain.GRX_KrankAlmaKonumu" Path="Retain.GRX_KrankAlmaKonumu" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Retain.GRX_KrankAlmaKonumu" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRX_KrankKoymaKonumu" Scope="">
+    <PVI Name="Retain.GRX_KrankKoymaKonumu" Path="Retain.GRX_KrankKoymaKonumu" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Retain.GRX_KrankKoymaKonumu" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRZ_KrankAlmaKonumu" Scope="">
+    <PVI Name="Retain.GRZ_KrankAlmaKonumu" Path="Retain.GRZ_KrankAlmaKonumu" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Retain.GRZ_KrankAlmaKonumu" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRZ_KrankKoymaKonumu" Scope="">
+    <PVI Name="Retain.GRZ_KrankKoymaKonumu" Path="Retain.GRZ_KrankKoymaKonumu" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Retain.GRZ_KrankKoymaKonumu" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="A_Act_Pos_mm" Scope="">
+    <PVI Name="Actual_Pos.RA_Actual_Pos" Path="Actual_Pos.RA_Actual_Pos" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Actual_Pos.RA_Actual_Pos" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="A_JogNeg" Scope="">
+    <PVI Name="Parametreler_0.A_JogNeg" Path="Parametreler_0.A_JogNeg" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.A_JogNeg" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="A_JogPos" Scope="">
+    <PVI Name="Parametreler_0.A_JogPos" Path="Parametreler_0.A_JogPos" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.A_JogPos" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="A_Markalama_Konumu" Scope="">
+    <PVI Name="Retain.RA_MarkalamaKonumu" Path="Retain.RA_MarkalamaKonumu" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Retain.RA_MarkalamaKonumu" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="A_Start_Home" Scope="">
+    <PVI Name="Parametreler_0.A_HomeStart" Path="Parametreler_0.A_HomeStart" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.A_HomeStart" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Alarm_Reset" Scope="">
+    <PVI Name="Parametreler_0.Alarm_Reset" Path="Parametreler_0.Alarm_Reset" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.Alarm_Reset" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GC1_Act_Pos_mm" Scope="">
+    <PVI Name="Actual_Pos.GC1_Actual_Pos" Path="Actual_Pos.GC1_Actual_Pos" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Actual_Pos.GC1_Actual_Pos" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GC1_HomeOk" Scope="">
+    <PVI Name="Parametreler_0.GC1_HomeOk" Path="Parametreler_0.GC1_HomeOk" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.GC1_HomeOk" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GC1_JogNeg" Scope="">
+    <PVI Name="Parametreler_0.GC1_JogNeg" Path="Parametreler_0.GC1_JogNeg" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.GC1_JogNeg" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GC1_JogPos" Scope="">
+    <PVI Name="Parametreler_0.GC1_JogPos" Path="Parametreler_0.GC1_JogPos" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.GC1_JogPos" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GC1_Start_Home" Scope="">
+    <PVI Name="Parametreler_0.GC1_HomeStart" Path="Parametreler_0.GC1_HomeStart" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.GC1_HomeStart" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GC2_Act_Pos_mm" Scope="">
+    <PVI Name="Actual_Pos.GC2_Actual_Pos" Path="Actual_Pos.GC2_Actual_Pos" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Actual_Pos.GC2_Actual_Pos" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GC2_HomeOk" Scope="">
+    <PVI Name="Parametreler_0.GC2_HomeOk" Path="Parametreler_0.GC2_HomeOk" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.GC2_HomeOk" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GC2_JogNeg" Scope="">
+    <PVI Name="Parametreler_0.GC2_JogNeg" Path="Parametreler_0.GC2_JogNeg" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.GC2_JogNeg" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GC2_JogPos" Scope="">
+    <PVI Name="Parametreler_0.GC2_JogPos" Path="Parametreler_0.GC2_JogPos" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.GC2_JogPos" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GC2_Start_Home" Scope="">
+    <PVI Name="Parametreler_0.GC2_HomeStart" Path="Parametreler_0.GC2_HomeStart" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.GC2_HomeStart" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRX_Act_Pos_mm" Scope="">
+    <PVI Name="Actual_Pos.GRX_Actual_Pos" Path="Actual_Pos.GRX_Actual_Pos" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Actual_Pos.GRX_Actual_Pos" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRX_HomeOk" Scope="">
+    <PVI Name="Parametreler_0.GRX_HomeOk" Path="Parametreler_0.GRX_HomeOk" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.GRX_HomeOk" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRX_JogNeg" Scope="">
+    <PVI Name="Parametreler_0.GRX_JogNeg" Path="Parametreler_0.GRX_JogNeg" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.GRX_JogNeg" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRX_JogPos" Scope="">
+    <PVI Name="Parametreler_0.GRX_JogPos" Path="Parametreler_0.GRX_JogPos" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.GRX_JogPos" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRX_Start_Home" Scope="">
+    <PVI Name="Parametreler_0.GRX_HomeStart" Path="Parametreler_0.GRX_HomeStart" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.GRX_HomeStart" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRZ_Act_Pos_mm" Scope="">
+    <PVI Name="Actual_Pos.GRZ_Actual_Pos" Path="Actual_Pos.GRZ_Actual_Pos" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Actual_Pos.GRZ_Actual_Pos" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRZ_HomeOk" Scope="">
+    <PVI Name="Parametreler_0.GRZ_HomeOk" Path="Parametreler_0.GRZ_HomeOk" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.GRZ_HomeOk" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRZ_JogNeg" Scope="">
+    <PVI Name="Parametreler_0.GRZ_JogNeg" Path="Parametreler_0.GRZ_JogNeg" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.GRZ_JogNeg" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRZ_JogPos" Scope="">
+    <PVI Name="Parametreler_0.GRZ_JogPos" Path="Parametreler_0.GRZ_JogPos" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.GRZ_JogPos" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="GRZ_Start_Home" Scope="">
+    <PVI Name="Parametreler_0.GRZ_HomeStart" Path="Parametreler_0.GRZ_HomeStart" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.GRZ_HomeStart" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Hatch_Adedi" Scope="">
+    <PVI Name="Retain.Hatch_Adedi" Path="Retain.Hatch_Adedi" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="i16" VN="1" VL="2" CD="Retain.Hatch_Adedi" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Krank_Al" Scope="">
+    <PVI Name="Parametreler_0.Krank_Al" Path="Parametreler_0.Krank_Al" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.Krank_Al" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Lazer_Start" Scope="">
+    <PVI Name="Parametreler_0.Lazer_Start" Path="Parametreler_0.Lazer_Start" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.Lazer_Start" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Lazer_Stop" Scope="">
+    <PVI Name="Parametreler_0.Lazer_Stop" Path="Parametreler_0.Lazer_Stop" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.Lazer_Stop" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="X_Act_Pos_mm" Scope="">
+    <PVI Name="Actual_Pos.RX_Actual_Pos" Path="Actual_Pos.RX_Actual_Pos" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Actual_Pos.RX_Actual_Pos" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="X_HomeOk" Scope="">
+    <PVI Name="Parametreler_0.X_HomeOk" Path="Parametreler_0.X_HomeOk" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.X_HomeOk" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="X_JogNeg" Scope="">
+    <PVI Name="Parametreler_0.X_JogNeg" Path="Parametreler_0.X_JogNeg" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.X_JogNeg" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="X_JogPos" Scope="">
+    <PVI Name="Parametreler_0.X_JogPos" Path="Parametreler_0.X_JogPos" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.X_JogPos" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="X_Markalama_Konumu" Scope="">
+    <PVI Name="Retain.RX_MarkalamaKonumu" Path="Retain.RX_MarkalamaKonumu" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Retain.RX_MarkalamaKonumu" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="X_Start_Home" Scope="">
+    <PVI Name="Parametreler_0.X_HomeStart" Path="Parametreler_0.X_HomeStart" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.X_HomeStart" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Y_Act_Pos_mm" Scope="">
+    <PVI Name="Actual_Pos.RY_Actual_Pos" Path="Actual_Pos.RY_Actual_Pos" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Actual_Pos.RY_Actual_Pos" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Y_HomeOk" Scope="">
+    <PVI Name="Parametreler_0.Y_HomeOk" Path="Parametreler_0.Y_HomeOk" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.Y_HomeOk" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Y_JogNeg" Scope="">
+    <PVI Name="Parametreler_0.Y_JogNeg" Path="Parametreler_0.Y_JogNeg" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.Y_JogNeg" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Y_JogPos" Scope="">
+    <PVI Name="Parametreler_0.Y_JogPos" Path="Parametreler_0.Y_JogPos" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.Y_JogPos" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Y_Markalama_Konumu" Scope="">
+    <PVI Name="Retain.RY_MarkalamaKonumu" Path="Retain.RY_MarkalamaKonumu" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Retain.RY_MarkalamaKonumu" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Y_Start_Home" Scope="">
+    <PVI Name="Parametreler_0.Y_HomeStart" Path="Parametreler_0.Y_HomeStart" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.Y_HomeStart" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Z_Act_Pos_mm" Scope="">
+    <PVI Name="Actual_Pos.RZ_Actual_Pos" Path="Actual_Pos.RZ_Actual_Pos" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Actual_Pos.RZ_Actual_Pos" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Z_HomeOk" Scope="">
+    <PVI Name="Parametreler_0.Z_HomeOk" Path="Parametreler_0.Z_HomeOk" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.Z_HomeOk" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Z_JogNeg" Scope="">
+    <PVI Name="Parametreler_0.Z_JogNeg" Path="Parametreler_0.Z_JogNeg" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.Z_JogNeg" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Z_JogPos" Scope="">
+    <PVI Name="Parametreler_0.Z_JogPos" Path="Parametreler_0.Z_JogPos" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.Z_JogPos" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Z_Markalama_Konumu" Scope="">
+    <PVI Name="Retain.RZ_MarkalamaKonumu" Path="Retain.RZ_MarkalamaKonumu" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="f32" VN="1" VL="4" CD="Retain.RZ_MarkalamaKonumu" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+  <Tag Name="Z_Start_Home" Scope="">
+    <PVI Name="Parametreler_0.Z_HomeStart" Path="Parametreler_0.Z_HomeStart" Type="Pvar" AccessType="DATA">
+      <ObjectDescriptor VT="boolean" VN="1" VL="1" CD="Parametreler_0.Z_HomeStart" AT="rw" RF="1000" DV="" WR="true" />
+      <LinkDescriptor BitNumber="none" LT="raw">
+        <CastMode Pg2000="false" Decimal="false" Range="false" Rounding="false" TerminateStrings="false" />
+      </LinkDescriptor>
+    </PVI>
+  </Tag>
+</Map>

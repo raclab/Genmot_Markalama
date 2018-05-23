@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Transfer xmlns="http://br-automation.co.at/AS/Transfer">
+  <OperatingSystem Version="R4.02"/>
+  <Hardware Target="SG4"/>
+  <Operation Delete="GRYAxisCon.br"/>
+  <Operation Delete="Receiver.br"/>
+  <Operation Delete="Sender.br"/>
+  <Operation Delete="Master.br"/>
+  <Operation Delete="GRZAxisCon.br"/>
+  <Operation Delete="GRXAxisCon.br"/>
+  <Operation Delete="RC2AxisCon.br"/>
+  <Operation Delete="RC1AxisCon.br"/>
+  <Operation Delete="RAAxisCont.br"/>
+  <Operation Delete="RXAxisCont.br"/>
+  <Operation Delete="RYAxisCont.br"/>
+  <Operation Delete="RZAxisCont.br"/>
+  <Operation Delete="PowerAx2.br"/>
+  <Operation Delete="PowerAx1.br"/>
+  <Operation Delete="AsARCfg.br"/>
+  <Operation Delete="AsEPL.br"/>
+  <Operation Delete="LoopConR.br"/>
+  <Operation Delete="AsWeigh.br"/>
+  <Operation Delete="dvframe.br"/>
+  <Operation Delete="asieccon.br"/>
+  <Operation Delete="Acp10sdc.br"/>
+  <Operation Delete="acp10_mc.br"/>
+  <Operation Delete="Acp10man.br"/>
+  <Operation Delete="FileIO.br"/>
+  <Operation Delete="astime.br"/>
+  <Operation Delete="sys_lib.br"/>
+  <Operation Delete="brsystem.br"/>
+  <Operation Download="asfw.br" Memory="SystemROM"/>
+  <Operation Download="ashwd.br" Memory="SystemROM"/>
+  <Operation Download="arconfig.br" Memory="SystemROM"/>
+  <Operation Download="sysconf.br" Memory="SystemROM"/>
+  <Operation Restart="warm"/>
+  <Operation Download="AsOPCC.br" Memory="UserROM"/>
+  <Operation Download="Acp10cfg.br" Memory="UserROM"/>
+  <Operation Download="Acp10map.br" Memory="UserROM"/>
+  <Operation Download="NcGlobal.br" Memory="UserROM"/>
+  <Operation Download="powerlnk.br" Memory="UserROM"/>
+  <Operation Download="Acp10par.br" Memory="UserROM"/>
+  <Operation Download="runtime.br" Memory="UserROM"/>
+  <Operation Download="brsystem.br" Memory="UserROM"/>
+  <Operation Download="sys_lib.br" Memory="UserROM"/>
+  <Operation Download="astime.br" Memory="UserROM"/>
+  <Operation Download="FileIO.br" Memory="UserROM"/>
+  <Operation Download="Acp10man.br" Memory="UserROM"/>
+  <Operation Download="acp10_mc.br" Memory="UserROM"/>
+  <Operation Download="Acp10sdc.br" Memory="UserROM"/>
+  <Operation Download="Acp10sys.br" Memory="UserROM"/>
+  <Operation Download="acp10etxen.br" Memory="UserROM"/>
+  <Operation Download="gaxis01i.br" Memory="UserROM"/>
+  <Operation Download="gaxis01a.br" Memory="UserROM"/>
+  <Operation Download="gaxis02i.br" Memory="UserROM"/>
+  <Operation Download="gaxis02a.br" Memory="UserROM"/>
+  <Operation Download="gaxis03i.br" Memory="UserROM"/>
+  <Operation Download="gaxis03a.br" Memory="UserROM"/>
+  <Operation Download="gz1_axisi.br" Memory="UserROM"/>
+  <Operation Download="gz1_axisa.br" Memory="UserROM"/>
+  <Operation Download="gc1_axisi.br" Memory="UserROM"/>
+  <Operation Download="gc2_axisa.br" Memory="UserROM"/>
+  <Operation Download="gc2_axisi.br" Memory="UserROM"/>
+  <Operation Download="gc2_axisa1.br" Memory="UserROM"/>
+  <Operation Download="powersp1i.br" Memory="UserROM"/>
+  <Operation Download="powersp1a.br" Memory="UserROM"/>
+  <Operation Download="powersp2i.br" Memory="UserROM"/>
+  <Operation Download="powersp2a.br" Memory="UserROM"/>
+  <Operation Download="grx_axisi.br" Memory="UserROM"/>
+  <Operation Download="grx_axisa.br" Memory="UserROM"/>
+  <Operation Download="grz_axisi.br" Memory="UserROM"/>
+  <Operation Download="grz_axisa.br" Memory="UserROM"/>
+  <Operation Download="gry_axisi.br" Memory="UserROM"/>
+  <Operation Download="gry_axisa.br" Memory="UserROM"/>
+  <Operation Restart="warm"/>
+  <Operation Download="standard.br" Memory="UserROM"/>
+  <Operation Download="asieccon.br" Memory="UserROM"/>
+  <Operation Download="asstring.br" Memory="UserROM"/>
+  <Operation Download="dvframe.br" Memory="UserROM"/>
+  <Operation Download="iomap.br" Memory="UserROM"/>
+  <Operation Download="AsWeigh.br" Memory="UserROM"/>
+  <Operation Download="AsBrMath.br" Memory="UserROM"/>
+  <Operation Download="LoopConR.br" Memory="UserROM"/>
+  <Operation Download="AsBrStr.br" Memory="UserROM"/>
+  <Operation Download="AsEPL.br" Memory="UserROM"/>
+  <Operation Download="AsARCfg.br" Memory="UserROM"/>
+  <Operation Download="PowerAx1.br" Memory="UserROM"/>
+  <Operation Download="PowerAx2.br" Memory="UserROM"/>
+  <Operation Download="RZAxisCont.br" Memory="UserROM"/>
+  <Operation Download="RYAxisCont.br" Memory="UserROM"/>
+  <Operation Download="RXAxisCont.br" Memory="UserROM"/>
+  <Operation Download="RAAxisCont.br" Memory="UserROM"/>
+  <Operation Download="RC1AxisCon.br" Memory="UserROM"/>
+  <Operation Download="RC2AxisCon.br" Memory="UserROM"/>
+  <Operation Download="GRXAxisCon.br" Memory="UserROM"/>
+  <Operation Download="GRZAxisCon.br" Memory="UserROM"/>
+  <Operation Download="Master.br" Memory="UserROM"/>
+  <Operation Download="Sender.br" Memory="UserROM"/>
+  <Operation Download="Receiver.br" Memory="UserROM"/>
+  <Operation Download="GRYAxisCon.br" Memory="UserROM"/>
+</Transfer>

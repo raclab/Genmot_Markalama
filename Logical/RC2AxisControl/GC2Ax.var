@@ -1,0 +1,39 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * Program: Reg2Ax
+ * File: Reg2Ax.var
+ * Author: Coder
+ * Created: June 20, 2013
+ ********************************************************************
+ * Local variables of program Reg2Ax
+ ********************************************************************)
+VAR
+	Axis1Obj : UDINT; (*axis reference*)
+	Axis2Obj : UDINT; (*axis reference*)
+	AxisStep : USINT; (*current step in the step sequence*)
+	AutData : MC_AUTDATA_TYP := (0); (*configuration of the automat*)
+	MC_Power_0 : MC_Power; (*Function Block*)
+	MC_Home_0 : MC_Home; (*Function Block*)
+	MC_Stop_0 : MC_Stop; (*Function Block*)
+	MC_MoveVelocity_0 : MC_MoveVelocity; (*Function Block*)
+	MC_MoveAbsolute_0 : MC_MoveAbsolute; (*Function Block*)
+	MC_MoveAdditive_0 : MC_MoveAdditive; (*Function Block*)
+	MC_BR_InitAutData_0 : MC_BR_InitAutData; (*Function Block*)
+	MC_BR_AutControl_0 : MC_BR_AutControl; (*Function Block*)
+	MC_ReadAxisError_0 : MC_ReadAxisError; (*Function Block*)
+	MC_Reset_0 : MC_Reset; (*Function Block*)
+	MC_ReadStatus_0 : MC_ReadStatus; (*Function Block*)
+	MC_ReadActualPosition_0 : MC_ReadActualPosition; (*Function Block*)
+	MC_ReadActualVelocity_0 : MC_ReadActualVelocity; (*Function Block*)
+	MC_BR_ReadDriveStatus_0 : MC_BR_ReadDriveStatus; (*Function Block*)
+	MC_Halt_0 : MC_Halt; (*Function Block*)
+	MC_BR_DownloadCamProfileObj_0 : MC_BR_DownloadCamProfileObj;
+	SlaveFactor : REAL;
+	MC_BR_Phasing_0 : MC_BR_Phasing;
+	ShiftFactor : REAL;
+	MC_GearIn_0 : MC_GearIn;
+	MC_GearOut_0 : MC_GearOut;
+	MC_SetOverride_0 : MC_SetOverride;
+	MC_BR_CyclicRead_0 : MC_BR_CyclicRead;
+END_VAR

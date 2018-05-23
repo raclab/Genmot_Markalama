@@ -1,0 +1,643 @@
+<?xml version="1.0"?>
+<?AutomationRuntimeIOSystem Version = 2.5.0.7?>
+<ChannelConfiguration xmlns="http://www.br-automation.com/AR/IO"><Module ID="$root" Hardware="5PC910.SX01-00-AR010"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="4" Type="UDINT"/><Parameter ID="ModuleAddress" Value="1" Type="UDINT"/><Parameter ID="PLCFamily" Value="4" Type="UDINT"/><Parameter ID="ModuleAddress" Value="0" Type="UDINT"/></LegacyAddressInfo><Channel ID="ModuleID_CPU" Position="2" Description-de="Modulkennung des CPU Boards" Description-en="Module ID of CPU board" Ext="/HW" Address="0" Direction="IN" Type="UINT" ChannelType="GenericFuncCall" Function="mtcxGetDeviceIdPP500" FuncParam1="0xB" HWDResource="IO_CPU">
+		</Channel>
+		<Channel ID="TemperatureCPU" Position="20" Description-de="Temperatur der CPU in 1/10 Grad Celsius" Description-en="Temperature of CPU in 1/10 degree Celsius" Ext="/HW" Address="1" Direction="IN" Type="UINT" ChannelType="GenericFuncCall" Function="mtcxGetTempPP500" FuncParam1="0xB" FuncParam2="0x0" CyclicUpdate="1" HWDResource="IO_CPU">
+		</Channel>
+		<Channel ID="TemperatureBoard" Position="21" Description-de="Temperatur des Boards in 1/10 Grad Celsius" Description-en="Temperature of board in 1/10 degree Celsius" Ext="/HW" Address="2" Direction="IN" Type="UINT" ChannelType="GenericFuncCall" Function="mtcxGetTempPP500" FuncParam1="0xB" FuncParam2="0x1" CyclicUpdate="1" HWDResource="IO_CPU">
+		</Channel>
+		<Channel ID="SystemTime" Position="30" Description-de="Systemzeit beim Start des aktuellen Taskklassenzyklus [us]" Description-en="System time at the start of the current task cycle [us]" Ext="/HW" Address="3" Direction="IN" Type="DINT" ChannelType="SystemTime" HWDResource="IO_CPU">
+		</Channel>
+		<LegacyAddressInfo/><Channel ID="SerialNumber" Position="1" Description-de="Seriennummer des System Units" Description-en="Serial number of system unit" Ext="/HW" Address="0" Direction="IN" Type="UDINT" ChannelType="GenericFuncCall" Function="mtcxGetSerialNoPP500" FuncParam1="0">
+		</Channel>
+		<Channel ID="ModuleID" Position="2" Description-de="Modulkennung des System Units" Description-en="Module ID of system unit" Ext="/HW" Address="1" Direction="IN" Type="UINT" ChannelType="GenericFuncCall" Function="mtcxGetDeviceIdPP500" FuncParam1="0">
+		</Channel>
+		<Channel ID="PowerOnCycles" Position="10" Description-de="Einschaltzyklen des System Units" Description-en="PowerOnCycles of system unit" Ext="/HW" Address="2" Direction="IN" Type="UDINT" ChannelType="GenericFuncCall" Function="mtcxGetStatisticsCounter1" FuncParam1="0x0" FuncParam2="0x0">
+		</Channel>
+		<Channel ID="OperatingHours" Position="11" Description-de="Betriebsstunden des System Units [h]" Description-en="Operating hours of system unit [h]" Ext="/HW" Address="3" Direction="IN" Type="UDINT" ChannelType="GenericFuncCall" Function="mtcxGetStatisticsCounter0" FuncParam1="0x0" FuncParam2="0x0" CyclicUpdate="1">
+		</Channel>
+		<Channel ID="BatteryStatus" Position="20" Description-de="Batterie Status PC (0 = Batterie leer oder nicht vorhanden, 1 = Batterie OK)" Description-en="Battery status PC (0 = battery low or missing, 1 = battery ok)" Ext="/HW" Address="4" Direction="IN" Type="USINT" ChannelType="Battery" BatteryDetectionMethod="1" Ordinal="2" CyclicUpdate="1">
+		</Channel>
+		<Channel ID="MtcxVersionMajor" Position="30" Description-de="MtcX Version" Description-en="MtcX version" Ext="/HW" Address="5" Direction="IN" Type="USINT" ChannelType="GenericFuncCall" Function="mtcxGetPx32Version2" FuncParam1="1">
+		</Channel>
+		<Channel ID="MtcxVersionMinor" Position="31" Description-de="MtcX Version" Description-en="MtcX version" Ext="/HW" Address="6" Direction="IN" Type="USINT" ChannelType="GenericFuncCall" Function="mtcxGetPx32Version2" FuncParam1="0">
+		</Channel>
+		<Channel ID="TemperaturePS" Position="40" Description-de="Temperatur des Power Supply in 1/10 Grad Celsius" Description-en="Temperature of power supply unit in 1/10 degree Celsius" Ext="/HW" Address="7" Direction="IN" Type="UINT" ChannelType="GenericFuncCall" Function="mtcxGetTempPP500" FuncParam1="0x0" FuncParam2="0x0" CyclicUpdate="1">
+		</Channel>
+		<Channel ID="TemperatureHDD" Position="41" Description-de="Temperatur der HDD in 1/10 Grad Celsius" Description-en="Temperature of hard disk drive in 1/10 degree Celsius" Ext="/HW" Address="8" Direction="IN" Type="UINT" ChannelType="GenericFuncCall" Function="mtcxGetTempPP500" FuncParam1="0x0" FuncParam2="0x1" CyclicUpdate="1">
+		</Channel>
+		<Channel ID="TemperatureRAM" Position="42" Description-de="Temperatur des RAM Moduls in 1/10 Grad Celsius" Description-en="Temperature of RAM module unit in 1/10 degree Celsius" Ext="/HW" Address="9" Direction="IN" Type="UINT" ChannelType="GenericFuncCall" Function="mtcxGetTempPP500" FuncParam1="0x0" FuncParam2="0x2" CyclicUpdate="1">
+		</Channel>
+	</Module><Module ID="SL1" Hardware="5LS182.6-2"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="4" Type="UDINT"/><Parameter ID="ModuleAddress" Value="1" Type="UDINT"/></LegacyAddressInfo><Channel ID="ModuleOk" Position="1" Description-de="Modul Status (1 = Modul gesteckt)" Description-en="Module status (1 = module present)" Ext="/OK" Address="0" Direction="IN" Sig_St_Bool="1" Type="BOOL">
+		</Channel>
+		<Channel ID="SerialNumber" Position="2" Description-de="Seriennummer" Description-en="Serial number" Ext="/HW" Address="4" Direction="IN" Type="UDINT" Sig_St_Udint="1" ChannelType="HWTree" AliasName="Serial_Number" HWDResource="VIRTIO">
+		</Channel>
+		<Channel ID="ModuleID" Position="3" Description-de="Modulkennung" Description-en="Module ID" Ext="/HW" Address="1" Direction="IN" Type="UINT" Sig_St_Uint="1" ChannelType="HWTree" AliasName="Modno" HWDResource="VIRTIO">
+		</Channel>
+		<Channel ID="HardwareVariant" Position="4" Description-de="Hardware Variante" Description-en="Hardware variant" Ext="/HW" Address="2" Direction="IN" Type="UINT" Sig_St_Uint="1" ChannelType="HWTree" HWDResource="VIRTIO">
+		</Channel>
+		<Channel ID="FirmwareVersion" Position="5" Description-de="Firmware Version" Description-en="Firmware version" Ext="/HW" Address="3" Direction="IN" Type="UINT" Sig_St_Uint="1" ChannelType="HWTree" HWDResource="VIRTIO">
+		</Channel>
+		<Channel ID="BatteryStatus" Position="6" Description-de="Batterie Status CPU (0 = Batterie leer oder nicht vorhanden, 1 = Batterie OK)" Description-en="Battery status CPU (0 = battery low or missing, 1 = battery ok,)" Ext="/HW" Address="0" Direction="IN" Type="USINT" Sig_St_Usint="1" ChannelType="Battery" BatteryDetectionMethod="2" MemOffset0="0x100000" BitOffset="0" Device="SRAM" HWDResource="VIRTIO">
+		</Channel>
+		<Channel ID="DigitalOutput01" Position="7" Description-de="Ready Relais" Description-en="Ready Relais" Address="0" BitOffset="0" Direction="OUT" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="IF1.NodeSwitch" Position="1" Description-de="Wert am Knotennummernschalter" Description-en="Selected node switch value" Ext="/INFO" Address="0x80000019" Direction="IN" Type="USINT" Sig_St_Byte="1" HWDResource="IF1" ChannelPrefix="">
+		</Channel>
+		<Channel ID="IF1.LinkOk01" Position="200" Description-de="Link-Status an Schnittstelle 1" Description-en="Link state interface 1" Ext="/INFO" Address="0x8000001A" BitOffset="0" Direction="IN" Type="BOOL" Sig_St_Bool="1" HWDResource="IF1" ChannelPrefix="">
+		</Channel>
+		<Channel ID="IF1.LinkOk02" Position="201" Description-de="Link-Status an Schnittstelle 2" Description-en="Link state interface 2" Ext="/INFO" Address="0x8000001A" BitOffset="1" Direction="IN" Type="BOOL" Sig_St_Bool="1" HWDResource="IF1" ChannelPrefix="">
+		</Channel>
+		<Channel ID="IF1.OutputDMAMargin" Position="204" FromVersion="C3.08" Description-de="Abstand zur Ouput Zyklus Deadline in Mikrosekunden" Description-en="Margin to output cycle deadline in microseconds" Ext="/INFO" Address="0x8000000C" Direction="IN" Type="DINT" Sig_St_Dint="1" HWDResource="IF1" ChannelPrefix="">
+		</Channel>
+		<Channel ID="IF1.NodeNumber" Position="2" FromVersion="B2.87" HWDEntry="false" Description-de="Verwendete POWERLINK Knotennummer" Description-en="Node number currently in use" Ext="/INFO" Direction="IN" Type="USINT">
+		</Channel>
+		<Channel ID="IF1.CycleOk" Position="102" FromVersion="B2.87" HWDEntry="false" Description-de="Indikator fÃ¼r zyklischen Betrieb (1 = in Betrieb)" Description-en="Indication for proper cyclic operation (1 = operational)" Ext="/INFO" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="IF1.SyncOk" Position="103" FromVersion="B2.87" HWDEntry="false" Description-de="Indikator fÃ¼r ein synchronisiertes POWERLINK-System (1 = synchronisiert)" Description-en="Indication for a synchronized POWERLINK-system (1 = synchronized)" Ext="/INFO" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="IF1.NettimeSoC" Position="302" FromVersion="B2.87" HWDEntry="false" Description-de="Netzwerkzeit aus aktuellem SoC-Frame [us] (RelativeTime in POWERLINK V2)" Description-en="Network time extracted from current SoC-Frame [us] (RelativeTime in POWERLINK V2)" Ext="/INFO" Direction="IN" Type="DINT">
+		</Channel>
+		<Channel ID="IF1.NettimeOffset" Position="303" FromVersion="B2.87" HWDEntry="false" Description-de="Zeitversatz der Netzwerkzeit zur lokalen Systemzeit [us]" Description-en="Network time offset to local system time [us]" Ext="/INFO" Direction="IN" Type="DINT">
+		</Channel>
+		<Channel ID="IF1.CycleCount" Position="310" FromVersion="I2.85" HWDEntry="false" Description-de="Anzahl aller Buszyklen" Description-en="Overall number of bus cycles" Ext="/INFO" Direction="IN" Type="UDINT">
+		</Channel>
+		<Channel ID="IF1.FailedCycleCount" Position="311" FromVersion="I2.85" HWDEntry="false" Description-de="Anzahl der fehlerhaften Buszyklen" Description-en="Number of failed bus cycles" Ext="/INFO" Direction="IN" Type="UDINT">
+		</Channel>
+		<Channel ID="IF1.CycleTimeViolationCount" Position="312" FromVersion="I2.85" HWDEntry="false" Description-de="Anzahl der Zykluszeitverletzungen" Description-en="Number of cycle time violations" Ext="/INFO" Direction="IN" Type="UDINT">
+		</Channel>
+		<Channel ID="IF1.CycleIdleTime" Position="313" FromVersion="B2.87" HWDEntry="false" Description-de="UngenÃ¼tzte Zeit wÃ¤hrend eines POWERLINK Zyklus [us]" Description-en="Unoccupied time during one POWERLINK cycle [us]" Ext="/INFO" Direction="IN" Type="UDINT">
+		</Channel>
+		<Channel ID="IF1.CycleCongestionCount" Position="314" FromVersion="B2.87" HWDEntry="false" Description-de="Immer 0, verfuegbar wegen Abwaertskompatibilitaet" Description-en="allways 0, available for legacy projects" Ext="/INFO" Direction="IN" Type="UDINT">
+		</Channel>
+	</Module><Module ID="SL1.IF1.ST1" Hardware="X20BC0083"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="10" Type="UDINT"/><Parameter ID="BusType" Value="Powerlink"/></LegacyAddressInfo><Channel ID="ModuleOk" Position="1" FromVersion="C2.87" Description-de="Modul Status (1 = Modul gesteckt)" Description-en="Module status (1 = module present)" Ext="/OK" Address="0" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="SerialNumber" Position="2" FromVersion="A3.08" Description-de="Seriennummer" Description-en="Serial number" Ext="/INFO" Address="4" Direction="IN" Type="UDINT" Sig_St_Udint="1">
+		</Channel>
+		<Channel ID="ModuleID" Position="3" FromVersion="A3.08" Description-en="Module ID" Ext="/INFO" Address="10" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="HardwareVariant" Position="4" FromVersion="A3.08" Description-de="Hardware Variante" Description-en="Hardware variant" Ext="/INFO" Address="12" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="FirmwareVersion" Position="5" FromVersion="A3.08" Description-de="Firmware Version" Description-en="Firmware version" Ext="/INFO" Address="14" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="EthRxLost" Position="6" FromVersion="C2.87" Description-de="Anzahl verlorener Rx-Frames" Description-en="Number of lost Rx-Frames" Ext="/INFO" Address="0x80000402" Direction="IN" Type="DINT" Sig_St_Dint="1">
+		</Channel>
+		<Channel ID="EthRxOversize" Position="7" FromVersion="C2.87" Description-de="Anzahl empfangener uebergrosser Frames &gt; 1500 Bytes" Description-en="Number of received oversized frames &gt; 1500 Bytes" Ext="/INFO" Address="0x80000403" Direction="IN" Type="DINT" Sig_St_Dint="1">
+		</Channel>
+		<Channel ID="EthRxCRCError" Position="8" FromVersion="C2.87" Description-de="Anzahl von Rx-Frames mit falscher CRC" Description-en="Number of Rx-Frames with wrong CRC" Ext="/INFO" Address="0x80000404" Direction="IN" Type="DINT" Sig_St_Dint="1">
+		</Channel>
+		<Channel ID="EthRxOverflow" Position="9" FromVersion="C2.87" Description-de="Anzahl von verlorenen Rx-Frames wegen Performance-Engpass am BC" Description-en="Number of lost Rx-Frames due to performance shortage on BC" Ext="/INFO" Address="0x80000405" Direction="IN" Type="DINT" Sig_St_Dint="1">
+		</Channel>
+		<Channel ID="EthTxCollision" Position="10" FromVersion="C2.87" Description-de="Anzahl von Kollisionen am Ethernet waehrend BC sendet" Description-en="Number of collisions on ethernet while BC sending" Ext="/INFO" Address="0x80000406" Direction="IN" Type="DINT" Sig_St_Dint="1">
+		</Channel>
+		<Channel ID="EthPhy1LinkOk" Position="11" FromVersion="A2.94" Description-de="Link auf Schnittstelle 1 aktiv" Description-en="Link of interface 1 is active" Ext="/INFO" Address="0x80000417" BitOffset="0" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="EthPhy1LinkLoss" Position="12" FromVersion="C2.87" Description-de="Zaehlt um 1 hoch wenn Link der ersten Schnittstelle verloren geht" Description-en="Increments each time when link of physical interface 1 is lost" Ext="/INFO" Address="0x80000410" Direction="IN" Type="DINT" Sig_Counter_Dint="1">
+		</Channel>
+		<Channel ID="EthPhy2LinkOk" Position="13" FromVersion="A2.94" Description-de="Link auf Schnittstelle 2 aktiv" Description-en="Link of interface 2 is active" Ext="/INFO" Address="0x80000417" BitOffset="1" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="EthPhy2LinkLoss" Position="14" FromVersion="C2.87" Description-de="Zaehlt um 1 hoch wenn Link der zweiten Schnittstelle verloren geht" Description-en="Increments each time when link of physical interface 2 is lost" Ext="/INFO" Address="0x80000411" Direction="IN" Type="DINT" Sig_Counter_Dint="1">
+		</Channel>
+		<Channel ID="Nettime" Position="17" FromVersion="I4.02" Description-de="Nettime des Zyklus beim Empfangen des Poll Response der Station" Description-en="Nettime of cycle receiving the Poll Response of the station" Ext="/INFO" Address="0x80000450" Direction="IN" Type="DINT" Sig_Counter_Dint="1">
+		</Channel>
+		<Channel ID="IF1.CycleCount" Position="1" FromVersion="C2.87" Description-de="Anzahl der Buszyklen" Description-en="Number of bus cycles" Ext="/INFO" Address="0x80000100" Direction="IN" Type="DINT" Sig_St_Dint="1" Resource="IF1">
+		</Channel>
+		<Channel ID="IF1.BreakCount" Position="2" FromVersion="C2.87" Description-de="Anzahl der Buszyklen mit gesetztem Break-Signal" Description-en="Number of bus cycles with set break signal" Ext="/INFO" Address="0x80000101" Direction="IN" Type="DINT" Sig_St_Dint="1" Resource="IF1">
+		</Channel>
+		<Channel ID="IF1.SyncErrorCount" Position="3" FromVersion="C2.87" Description-de="Anzahl der fehlerhaften synchronen Frames" Description-en="Number of failed synchronous frames" Ext="/INFO" Address="0x80000102" Direction="IN" Type="DINT" Sig_St_Dint="1" Resource="IF1">
+		</Channel>
+		<Channel ID="IF1.SyncBusyErrorCount" Position="5" FromVersion="C2.87" Description-de="Anzahl der nicht versendeten synchronen Frames (Sender nicht bereit)" Description-en="Number of not sent synchronous frames (sender not ready)" Ext="/INFO" Address="0x80000105" Direction="IN" Type="DINT" Sig_St_Dint="1" Resource="IF1">
+		</Channel>
+		<Channel ID="IF1.SyncNoRxErrorCount" Position="6" FromVersion="C2.87" Description-de="Anzahl der nicht empfangenen synchronen Frames (Timeout)" Description-en="Number of not received synchronous frames (timeout)" Ext="/INFO" Address="0x80000106" Direction="IN" Type="DINT" Sig_St_Dint="1" Resource="IF1">
+		</Channel>
+		<Channel ID="IF1.SyncFormatErrorCount" Position="7" FromVersion="C2.87" Description-de="Anzahl der zerstoerten synchronen Frames" Description-en="Number of faulty synchronous frames" Ext="/INFO" Address="0x80000107" Direction="IN" Type="DINT" Sig_St_Dint="1" Resource="IF1">
+		</Channel>
+		<Channel ID="IF1.SyncPendingErrorCount" Position="8" FromVersion="C2.87" Description-de="Anzahl der synchronen Frames, die nicht versendet werden konnten, weil gerade ein anderer empfangen wurde" Description-en="Number of synchronous frames which could not be sent because of receiving a frame" Ext="/INFO" Address="0x80000108" Direction="IN" Type="DINT" Sig_St_Dint="1" Resource="IF1">
+		</Channel>
+		<Channel ID="IF1.AsyncErrorCount" Position="9" FromVersion="C2.87" Description-de="Anzahl der fehlerhaften asynchronen Frames" Description-en="Number of failed asynchronous frames" Ext="/INFO" Address="0x80000103" Direction="IN" Type="DINT" Sig_St_Dint="1" Resource="IF1">
+		</Channel>
+		<Channel ID="IF1.AsyncBusyErrorCount" Position="11" FromVersion="C2.87" Description-de="Anzahl der nicht versendeten asynchronen Frames (Sender nicht bereit)" Description-en="Number of not sent asynchronous frames (sender not ready)" Ext="/INFO" Address="0x8000010A" Direction="IN" Type="DINT" Sig_St_Dint="1" Resource="IF1">
+		</Channel>
+		<Channel ID="IF1.AsyncNoRxErrorCount" Position="12" FromVersion="C2.87" Description-de="Anzahl der nicht empfangenen asynchronen Frames (Timeout)" Description-en="Number of not received asynchronous frames (timeout)" Ext="/INFO" Address="0x8000010B" Direction="IN" Type="DINT" Sig_St_Dint="1" Resource="IF1">
+		</Channel>
+		<Channel ID="IF1.AsyncFormatErrorCount" Position="13" FromVersion="C2.87" Description-de="Anzahl der zerstoerten asynchronen Frames" Description-en="Number of faulty asynchronous frames" Ext="/INFO" Address="0x8000010C" Direction="IN" Type="DINT" Sig_St_Dint="1" Resource="IF1">
+		</Channel>
+		<Channel ID="IF1.AsyncPendingErrorCount" Position="14" FromVersion="C2.87" Description-de="Anzahl der asynchronen Frames, die nicht versendet werden konnten, weil gerade ein anderer empfangen wurde" Description-en="Number of asynchronous frames which could not be sent because of receiving a frame" Ext="/INFO" Address="0x8000010D" Direction="IN" Type="DINT" Sig_St_Dint="1" Resource="IF1">
+		</Channel>
+		<Channel ID="IF1.ModuleLostWhileOperational" Position="15" FromVersion="C2.87" Description-de="Hardwarekonfiguration geaendert: Modul waehrend Betrieb entfernt" Description-en="Hardware configuration changed: module disconnected while operational" Ext="/INFO" Address="0x8000010E" Direction="IN" Type="DINT" Sig_St_Dint="1" Resource="IF1">
+		</Channel>
+		<Channel ID="IF1.ModuleNewWhileOperational" Position="16" FromVersion="C2.87" Description-de="Hardwarekonfiguration geaendert: neues Modul waehrend Betrieb erkannt" Description-en="Hardware configuration changed: new module detected while operational" Ext="/INFO" Address="0x8000010F" Direction="IN" Type="DINT" Sig_St_Dint="1" Resource="IF1">
+		</Channel>
+	</Module><Module ID="SL1.IF1.ST1.IF1.ST1" Hardware="X20PS9400a" Simulatable="true"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="10" Type="UDINT"/><Parameter ID="ModuleAddress" Value="0" Type="UDINT"/><Parameter ID="BusType" Value="X2X"/></LegacyAddressInfo><Channel ID="ModuleOk" Position="1" Description-de="Modul Status (1 = Modul gesteckt)" Description-en="Module status (1 = module present)" Description-fr="Etat module (1 = module présent)" Ext="/OK" Address="0" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="SerialNumber" Position="2" FromVersion="A3.08" Description-de="Seriennummer" Description-en="Serial number" Ext="/INFO" Address="4" Direction="IN" Type="UDINT" Sig_St_Udint="1">
+		</Channel>
+		<Channel ID="ModuleID" Position="3" FromVersion="A3.08" Description-de="Modulkennung" Description-en="Module ID" Ext="/INFO" Address="10" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="HardwareVariant" Position="4" FromVersion="A3.08" Description-de="Hardware Variante" Description-en="Hardware variant" Ext="/INFO" Address="12" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="FirmwareVersion" Position="5" FromVersion="A3.08" Description-de="Firmware Version" Description-en="Firmware version" Ext="/INFO" Address="14" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="StatusInput01" Position="6" Description-de="Busversorgungswarnung (1 = Ueberstrom &gt;2,3 A oder Unterspannung &lt;4,7 V)" Description-en="Bus power supply warning (1 = over current &gt;2.3 A or low voltage &lt;4.7 V)" Ext="/FIXED" Address="1" BitOffset="0" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="StatusInput02" Position="8" Description-de="I/O Versorgungswarnung (0 = DC OK)" Description-en="I/O power supply warning (0 = DC OK)" Ext="/FIXED" Address="1" BitOffset="2" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="BusModuleId" Position="10500" FromVersion="A3.08" Description-de="Modul ID des Busmoduls" Description-en="Module ID of bus module" Ext="/INFO" Address="0x80000180" Direction="IN" Type="UINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModeOfOperation" Position="10501" FromVersion="A3.08" Description-de="Status des Moduls" Description-en="Status of module" Ext="/INFO" Address="0x80000181" Direction="IN" Type="USINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModeOfOperationChangeTime" Position="10502" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModeOfOperation" Description-en="Time of last change of channel ModeOfOperation" Ext="/INFO" Address="0xC0000181" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfResets" Position="10503" FromVersion="A3.08" Description-de="Anzahl der Resets einer Station" Description-en="Number of resets of the station" Ext="/INFO" Address="0x80000182" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfResetsChangeTime" Position="10504" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfResets" Description-en="Time of last change of channel NrOfResets" Ext="/INFO" Address="0xC0000182" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfInits" Position="10505" FromVersion="A3.08" Description-de="Anzahl der Inits einer Station" Description-en="Number of inits of the station" Ext="/INFO" Address="0x80000183" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfInitsChangeTime" Position="10506" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfInits" Description-en="Time of last change of channel NrOfInits" Ext="/INFO" Address="0xC0000183" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfFwUpdates" Position="10507" FromVersion="A3.08" Description-de="Anzahl der FW Updates einer Station" Description-en="Number of FW updates of the station" Ext="/INFO" Address="0x80000184" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfFwUpdatesChangeTime" Position="10508" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfFwUpdates" Description-en="Time of last change of channel NrOfFwUpdates" Ext="/INFO" Address="0xC0000184" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleNoComm" Position="10509" FromVersion="A3.08" Description-de="Anzahl fehlender Antworten vom IO Prozessor am IO Modul" Description-en="Number of missing answers from IO processor on IO module" Ext="/INFO" Address="0x80000185" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleNoCommChangeTime" Position="10510" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModuleNoComm" Description-en="Time of last change of channel ModuleNoComm" Ext="/INFO" Address="0xC0000185" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleCommError" Position="10511" FromVersion="A3.08" Description-de="Anzahl der Fehler bei der Kommunikation zum IO Prozessor am IO Modul" Description-en="Number of communication errors to IO processor on IO module" Ext="/INFO" Address="0x80000186" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleCommErrorChangeTime" Position="10512" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModuleCommError" Description-en="Time of last change of channel ModuleCommError" Ext="/INFO" Address="0xC0000186" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+	</Module><Module ID="SL1.IF1.ST1.IF1.ST3" Hardware="X20DI9371" Simulatable="true"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="10" Type="UDINT"/><Parameter ID="ModuleAddress" Value="0" Type="UDINT"/><Parameter ID="BusType" Value="X2X"/></LegacyAddressInfo><Channel ID="ModuleOk" Position="1" Description-de="Modul Status (1 = Modul gesteckt)" Description-en="Module status (1 = module present)" Description-fr="Etat module (1 = module présent)" Ext="/OK" Address="0" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="SerialNumber" Position="2" FromVersion="A3.08" Description-de="Seriennummer" Description-en="Serial number" Ext="/INFO" Address="4" Direction="IN" Type="UDINT" Sig_St_Udint="1">
+		</Channel>
+		<Channel ID="ModuleID" Position="3" FromVersion="A3.08" Description-de="Modulkennung" Description-en="Module ID" Ext="/INFO" Address="10" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="HardwareVariant" Position="4" FromVersion="A3.08" Description-de="Hardware Variante" Description-en="Hardware variant" Ext="/INFO" Address="12" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="FirmwareVersion" Position="5" FromVersion="A3.08" Description-de="Firmware Version" Description-en="Firmware version" Ext="/INFO" Address="14" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="DigitalInput01" Position="6" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="0" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput02" Position="8" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="1" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput03" Position="10" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="2" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput04" Position="12" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="3" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput05" Position="14" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="4" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput06" Position="16" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="5" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput07" Position="18" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="6" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput08" Position="20" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="7" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput09" Position="22" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="2" BitOffset="0" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput10" Position="24" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="2" BitOffset="1" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput11" Position="26" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="2" BitOffset="2" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput12" Position="28" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="2" BitOffset="3" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="BusModuleId" Position="10500" FromVersion="A3.08" Description-de="Modul ID des Busmoduls" Description-en="Module ID of bus module" Ext="/INFO" Address="0x80000180" Direction="IN" Type="UINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModeOfOperation" Position="10501" FromVersion="A3.08" Description-de="Status des Moduls" Description-en="Status of module" Ext="/INFO" Address="0x80000181" Direction="IN" Type="USINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModeOfOperationChangeTime" Position="10502" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModeOfOperation" Description-en="Time of last change of channel ModeOfOperation" Ext="/INFO" Address="0xC0000181" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfResets" Position="10503" FromVersion="A3.08" Description-de="Anzahl der Resets einer Station" Description-en="Number of resets of the station" Ext="/INFO" Address="0x80000182" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfResetsChangeTime" Position="10504" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfResets" Description-en="Time of last change of channel NrOfResets" Ext="/INFO" Address="0xC0000182" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfInits" Position="10505" FromVersion="A3.08" Description-de="Anzahl der Inits einer Station" Description-en="Number of inits of the station" Ext="/INFO" Address="0x80000183" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfInitsChangeTime" Position="10506" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfInits" Description-en="Time of last change of channel NrOfInits" Ext="/INFO" Address="0xC0000183" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfFwUpdates" Position="10507" FromVersion="A3.08" Description-de="Anzahl der FW Updates einer Station" Description-en="Number of FW updates of the station" Ext="/INFO" Address="0x80000184" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfFwUpdatesChangeTime" Position="10508" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfFwUpdates" Description-en="Time of last change of channel NrOfFwUpdates" Ext="/INFO" Address="0xC0000184" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleNoComm" Position="10509" FromVersion="A3.08" Description-de="Anzahl fehlender Antworten vom IO Prozessor am IO Modul" Description-en="Number of missing answers from IO processor on IO module" Ext="/INFO" Address="0x80000185" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleNoCommChangeTime" Position="10510" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModuleNoComm" Description-en="Time of last change of channel ModuleNoComm" Ext="/INFO" Address="0xC0000185" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleCommError" Position="10511" FromVersion="A3.08" Description-de="Anzahl der Fehler bei der Kommunikation zum IO Prozessor am IO Modul" Description-en="Number of communication errors to IO processor on IO module" Ext="/INFO" Address="0x80000186" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleCommErrorChangeTime" Position="10512" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModuleCommError" Description-en="Time of last change of channel ModuleCommError" Ext="/INFO" Address="0xC0000186" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+	</Module><Module ID="SL1.IF1.ST1.IF1.ST7" Hardware="X20DO8332" Simulatable="true"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="10" Type="UDINT"/><Parameter ID="ModuleAddress" Value="0" Type="UDINT"/><Parameter ID="BusType" Value="X2X"/></LegacyAddressInfo><Channel ID="ModuleOk" Position="1" Description-en="Module status (1 = module present)" Description-de="Modul Status (1 = Modul gesteckt)" Ext="/OK" Address="0" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="SerialNumber" Position="2" FromVersion="A3.08" Description-en="Serial number" Description-de="Seriennummer" Ext="/INFO" Address="4" Direction="IN" Type="UDINT" Sig_St_Udint="1">
+		</Channel>
+		<Channel ID="ModuleID" Position="3" FromVersion="A3.08" Description-en="Module ID" Description-de="Modulkennung" Ext="/INFO" Address="10" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="HardwareVariant" Position="4" FromVersion="A3.08" Description-en="Hardware variant" Description-de="Hardware Variante" Ext="/INFO" Address="12" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="FirmwareVersion" Position="5" FromVersion="A3.08" Description-en="Firmware version" Description-de="Firmware Version" Ext="/INFO" Address="14" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="DigitalOutput01" Position="6" Description-en="24 VDC / 2 A, source" Description-de="24 VDC / 2 A, Source" Ext="/FIXED" Address="0" BitOffset="0" Direction="OUT" Type="BOOL" Sig_Dig_2A_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalOutput02" Position="7" Description-en="24 VDC / 2 A, source" Description-de="24 VDC / 2 A, Source" Ext="/FIXED" Address="0" BitOffset="1" Direction="OUT" Type="BOOL" Sig_Dig_2A_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalOutput03" Position="8" Description-en="24 VDC / 2 A, source" Description-de="24 VDC / 2 A, Source" Ext="/FIXED" Address="0" BitOffset="2" Direction="OUT" Type="BOOL" Sig_Dig_2A_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalOutput04" Position="9" Description-en="24 VDC / 2 A, source" Description-de="24 VDC / 2 A, Source" Ext="/FIXED" Address="0" BitOffset="3" Direction="OUT" Type="BOOL" Sig_Dig_2A_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalOutput05" Position="10" Description-en="24 VDC / 2 A, source" Description-de="24 VDC / 2 A, Source" Ext="/FIXED" Address="0" BitOffset="4" Direction="OUT" Type="BOOL" Sig_Dig_2A_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalOutput06" Position="11" Description-en="24 VDC / 2 A, source" Description-de="24 VDC / 2 A, Source" Ext="/FIXED" Address="0" BitOffset="5" Direction="OUT" Type="BOOL" Sig_Dig_2A_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalOutput07" Position="12" Description-en="24 VDC / 2 A, source" Description-de="24 VDC / 2 A, Source" Ext="/FIXED" Address="0" BitOffset="6" Direction="OUT" Type="BOOL" Sig_Dig_2A_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalOutput08" Position="13" Description-en="24 VDC / 2 A, source" Description-de="24 VDC / 2 A, Source" Ext="/FIXED" Address="0" BitOffset="7" Direction="OUT" Type="BOOL" Sig_Dig_2A_24VDC="1">
+		</Channel>
+		<Channel ID="StatusDigitalOutput01" Position="14" Description-en="Status digital output 01 (0 = OK)" Description-de="Status digitaler Ausgang 01 (0 = OK)" Ext="/FIXED" Address="1" BitOffset="0" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="StatusDigitalOutput02" Position="16" Description-en="Status digital output 02 (0 = OK)" Description-de="Status digitaler Ausgang 02 (0 = OK)" Ext="/FIXED" Address="1" BitOffset="1" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="StatusDigitalOutput03" Position="18" Description-en="Status digital output 03 (0 = OK)" Description-de="Status digitaler Ausgang 03 (0 = OK)" Ext="/FIXED" Address="1" BitOffset="2" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="StatusDigitalOutput04" Position="20" Description-en="Status digital output 04 (0 = OK)" Description-de="Status digitaler Ausgang 04 (0 = OK)" Ext="/FIXED" Address="1" BitOffset="3" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="StatusDigitalOutput05" Position="22" Description-en="Status digital output 05 (0 = OK)" Description-de="Status digitaler Ausgang 05 (0 = OK)" Ext="/FIXED" Address="1" BitOffset="4" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="StatusDigitalOutput06" Position="24" Description-en="Status digital output 06 (0 = OK)" Description-de="Status digitaler Ausgang 06 (0 = OK)" Ext="/FIXED" Address="1" BitOffset="5" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="StatusDigitalOutput07" Position="26" Description-en="Status digital output 07 (0 = OK)" Description-de="Status digitaler Ausgang 07 (0 = OK)" Ext="/FIXED" Address="1" BitOffset="6" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="StatusDigitalOutput08" Position="28" Description-en="Status digital output 08 (0 = OK)" Description-de="Status digitaler Ausgang 08 (0 = OK)" Ext="/FIXED" Address="1" BitOffset="7" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="BusModuleId" Position="10500" FromVersion="A3.08" Description-de="Modul ID des Busmoduls" Description-en="Module ID of bus module" Ext="/INFO" Address="0x80000180" Direction="IN" Type="UINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModeOfOperation" Position="10501" FromVersion="A3.08" Description-de="Status des Moduls" Description-en="Status of module" Ext="/INFO" Address="0x80000181" Direction="IN" Type="USINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModeOfOperationChangeTime" Position="10502" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModeOfOperation" Description-en="Time of last change of channel ModeOfOperation" Ext="/INFO" Address="0xC0000181" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfResets" Position="10503" FromVersion="A3.08" Description-de="Anzahl der Resets einer Station" Description-en="Number of resets of the station" Ext="/INFO" Address="0x80000182" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfResetsChangeTime" Position="10504" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfResets" Description-en="Time of last change of channel NrOfResets" Ext="/INFO" Address="0xC0000182" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfInits" Position="10505" FromVersion="A3.08" Description-de="Anzahl der Inits einer Station" Description-en="Number of inits of the station" Ext="/INFO" Address="0x80000183" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfInitsChangeTime" Position="10506" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfInits" Description-en="Time of last change of channel NrOfInits" Ext="/INFO" Address="0xC0000183" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfFwUpdates" Position="10507" FromVersion="A3.08" Description-de="Anzahl der FW Updates einer Station" Description-en="Number of FW updates of the station" Ext="/INFO" Address="0x80000184" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfFwUpdatesChangeTime" Position="10508" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfFwUpdates" Description-en="Time of last change of channel NrOfFwUpdates" Ext="/INFO" Address="0xC0000184" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleNoComm" Position="10509" FromVersion="A3.08" Description-de="Anzahl fehlender Antworten vom IO Prozessor am IO Modul" Description-en="Number of missing answers from IO processor on IO module" Ext="/INFO" Address="0x80000185" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleNoCommChangeTime" Position="10510" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModuleNoComm" Description-en="Time of last change of channel ModuleNoComm" Ext="/INFO" Address="0xC0000185" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleCommError" Position="10511" FromVersion="A3.08" Description-de="Anzahl der Fehler bei der Kommunikation zum IO Prozessor am IO Modul" Description-en="Number of communication errors to IO processor on IO module" Ext="/INFO" Address="0x80000186" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleCommErrorChangeTime" Position="10512" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModuleCommError" Description-en="Time of last change of channel ModuleCommError" Ext="/INFO" Address="0xC0000186" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+	</Module><Module ID="SL1.IF1.ST10" Hardware="8B0Pxxxxxxxx.xxx-x"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="-1" Type="UDINT"/><Parameter ID="ModuleAddress" Value="0" Type="UDINT"/><Parameter ID="BusType" Value="Powerlink"/></LegacyAddressInfo></Module><Module ID="SL1.IF1.ST11" Hardware="8BVIxxxxxxDx.xxx-x"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="-1" Type="UDINT"/><Parameter ID="ModuleAddress" Value="0" Type="UDINT"/><Parameter ID="BusType" Value="Powerlink"/></LegacyAddressInfo></Module><Module ID="SL1.IF1.ST1.IF1.ST2" Hardware="X20DI9371" Simulatable="true"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="10" Type="UDINT"/><Parameter ID="ModuleAddress" Value="0" Type="UDINT"/><Parameter ID="BusType" Value="X2X"/></LegacyAddressInfo><Channel ID="ModuleOk" Position="1" Description-de="Modul Status (1 = Modul gesteckt)" Description-en="Module status (1 = module present)" Description-fr="Etat module (1 = module présent)" Ext="/OK" Address="0" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="SerialNumber" Position="2" FromVersion="A3.08" Description-de="Seriennummer" Description-en="Serial number" Ext="/INFO" Address="4" Direction="IN" Type="UDINT" Sig_St_Udint="1">
+		</Channel>
+		<Channel ID="ModuleID" Position="3" FromVersion="A3.08" Description-de="Modulkennung" Description-en="Module ID" Ext="/INFO" Address="10" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="HardwareVariant" Position="4" FromVersion="A3.08" Description-de="Hardware Variante" Description-en="Hardware variant" Ext="/INFO" Address="12" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="FirmwareVersion" Position="5" FromVersion="A3.08" Description-de="Firmware Version" Description-en="Firmware version" Ext="/INFO" Address="14" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="DigitalInput01" Position="6" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="0" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput02" Position="8" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="1" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput03" Position="10" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="2" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput04" Position="12" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="3" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput05" Position="14" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="4" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput06" Position="16" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="5" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput07" Position="18" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="6" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput08" Position="20" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="7" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput09" Position="22" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="2" BitOffset="0" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput10" Position="24" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="2" BitOffset="1" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput11" Position="26" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="2" BitOffset="2" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput12" Position="28" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="2" BitOffset="3" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="BusModuleId" Position="10500" FromVersion="A3.08" Description-de="Modul ID des Busmoduls" Description-en="Module ID of bus module" Ext="/INFO" Address="0x80000180" Direction="IN" Type="UINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModeOfOperation" Position="10501" FromVersion="A3.08" Description-de="Status des Moduls" Description-en="Status of module" Ext="/INFO" Address="0x80000181" Direction="IN" Type="USINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModeOfOperationChangeTime" Position="10502" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModeOfOperation" Description-en="Time of last change of channel ModeOfOperation" Ext="/INFO" Address="0xC0000181" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfResets" Position="10503" FromVersion="A3.08" Description-de="Anzahl der Resets einer Station" Description-en="Number of resets of the station" Ext="/INFO" Address="0x80000182" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfResetsChangeTime" Position="10504" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfResets" Description-en="Time of last change of channel NrOfResets" Ext="/INFO" Address="0xC0000182" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfInits" Position="10505" FromVersion="A3.08" Description-de="Anzahl der Inits einer Station" Description-en="Number of inits of the station" Ext="/INFO" Address="0x80000183" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfInitsChangeTime" Position="10506" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfInits" Description-en="Time of last change of channel NrOfInits" Ext="/INFO" Address="0xC0000183" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfFwUpdates" Position="10507" FromVersion="A3.08" Description-de="Anzahl der FW Updates einer Station" Description-en="Number of FW updates of the station" Ext="/INFO" Address="0x80000184" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfFwUpdatesChangeTime" Position="10508" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfFwUpdates" Description-en="Time of last change of channel NrOfFwUpdates" Ext="/INFO" Address="0xC0000184" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleNoComm" Position="10509" FromVersion="A3.08" Description-de="Anzahl fehlender Antworten vom IO Prozessor am IO Modul" Description-en="Number of missing answers from IO processor on IO module" Ext="/INFO" Address="0x80000185" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleNoCommChangeTime" Position="10510" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModuleNoComm" Description-en="Time of last change of channel ModuleNoComm" Ext="/INFO" Address="0xC0000185" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleCommError" Position="10511" FromVersion="A3.08" Description-de="Anzahl der Fehler bei der Kommunikation zum IO Prozessor am IO Modul" Description-en="Number of communication errors to IO processor on IO module" Ext="/INFO" Address="0x80000186" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleCommErrorChangeTime" Position="10512" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModuleCommError" Description-en="Time of last change of channel ModuleCommError" Ext="/INFO" Address="0xC0000186" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+	</Module><Module ID="SL1.IF1.ST1.IF1.ST6" Hardware="X20DO8332" Simulatable="true"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="10" Type="UDINT"/><Parameter ID="ModuleAddress" Value="0" Type="UDINT"/><Parameter ID="BusType" Value="X2X"/></LegacyAddressInfo><Channel ID="ModuleOk" Position="1" Description-en="Module status (1 = module present)" Description-de="Modul Status (1 = Modul gesteckt)" Ext="/OK" Address="0" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="SerialNumber" Position="2" FromVersion="A3.08" Description-en="Serial number" Description-de="Seriennummer" Ext="/INFO" Address="4" Direction="IN" Type="UDINT" Sig_St_Udint="1">
+		</Channel>
+		<Channel ID="ModuleID" Position="3" FromVersion="A3.08" Description-en="Module ID" Description-de="Modulkennung" Ext="/INFO" Address="10" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="HardwareVariant" Position="4" FromVersion="A3.08" Description-en="Hardware variant" Description-de="Hardware Variante" Ext="/INFO" Address="12" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="FirmwareVersion" Position="5" FromVersion="A3.08" Description-en="Firmware version" Description-de="Firmware Version" Ext="/INFO" Address="14" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="DigitalOutput01" Position="6" Description-en="24 VDC / 2 A, source" Description-de="24 VDC / 2 A, Source" Ext="/FIXED" Address="0" BitOffset="0" Direction="OUT" Type="BOOL" Sig_Dig_2A_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalOutput02" Position="7" Description-en="24 VDC / 2 A, source" Description-de="24 VDC / 2 A, Source" Ext="/FIXED" Address="0" BitOffset="1" Direction="OUT" Type="BOOL" Sig_Dig_2A_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalOutput03" Position="8" Description-en="24 VDC / 2 A, source" Description-de="24 VDC / 2 A, Source" Ext="/FIXED" Address="0" BitOffset="2" Direction="OUT" Type="BOOL" Sig_Dig_2A_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalOutput04" Position="9" Description-en="24 VDC / 2 A, source" Description-de="24 VDC / 2 A, Source" Ext="/FIXED" Address="0" BitOffset="3" Direction="OUT" Type="BOOL" Sig_Dig_2A_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalOutput05" Position="10" Description-en="24 VDC / 2 A, source" Description-de="24 VDC / 2 A, Source" Ext="/FIXED" Address="0" BitOffset="4" Direction="OUT" Type="BOOL" Sig_Dig_2A_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalOutput06" Position="11" Description-en="24 VDC / 2 A, source" Description-de="24 VDC / 2 A, Source" Ext="/FIXED" Address="0" BitOffset="5" Direction="OUT" Type="BOOL" Sig_Dig_2A_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalOutput07" Position="12" Description-en="24 VDC / 2 A, source" Description-de="24 VDC / 2 A, Source" Ext="/FIXED" Address="0" BitOffset="6" Direction="OUT" Type="BOOL" Sig_Dig_2A_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalOutput08" Position="13" Description-en="24 VDC / 2 A, source" Description-de="24 VDC / 2 A, Source" Ext="/FIXED" Address="0" BitOffset="7" Direction="OUT" Type="BOOL" Sig_Dig_2A_24VDC="1">
+		</Channel>
+		<Channel ID="StatusDigitalOutput01" Position="14" Description-en="Status digital output 01 (0 = OK)" Description-de="Status digitaler Ausgang 01 (0 = OK)" Ext="/FIXED" Address="1" BitOffset="0" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="StatusDigitalOutput02" Position="16" Description-en="Status digital output 02 (0 = OK)" Description-de="Status digitaler Ausgang 02 (0 = OK)" Ext="/FIXED" Address="1" BitOffset="1" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="StatusDigitalOutput03" Position="18" Description-en="Status digital output 03 (0 = OK)" Description-de="Status digitaler Ausgang 03 (0 = OK)" Ext="/FIXED" Address="1" BitOffset="2" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="StatusDigitalOutput04" Position="20" Description-en="Status digital output 04 (0 = OK)" Description-de="Status digitaler Ausgang 04 (0 = OK)" Ext="/FIXED" Address="1" BitOffset="3" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="StatusDigitalOutput05" Position="22" Description-en="Status digital output 05 (0 = OK)" Description-de="Status digitaler Ausgang 05 (0 = OK)" Ext="/FIXED" Address="1" BitOffset="4" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="StatusDigitalOutput06" Position="24" Description-en="Status digital output 06 (0 = OK)" Description-de="Status digitaler Ausgang 06 (0 = OK)" Ext="/FIXED" Address="1" BitOffset="5" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="StatusDigitalOutput07" Position="26" Description-en="Status digital output 07 (0 = OK)" Description-de="Status digitaler Ausgang 07 (0 = OK)" Ext="/FIXED" Address="1" BitOffset="6" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="StatusDigitalOutput08" Position="28" Description-en="Status digital output 08 (0 = OK)" Description-de="Status digitaler Ausgang 08 (0 = OK)" Ext="/FIXED" Address="1" BitOffset="7" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="BusModuleId" Position="10500" FromVersion="A3.08" Description-de="Modul ID des Busmoduls" Description-en="Module ID of bus module" Ext="/INFO" Address="0x80000180" Direction="IN" Type="UINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModeOfOperation" Position="10501" FromVersion="A3.08" Description-de="Status des Moduls" Description-en="Status of module" Ext="/INFO" Address="0x80000181" Direction="IN" Type="USINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModeOfOperationChangeTime" Position="10502" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModeOfOperation" Description-en="Time of last change of channel ModeOfOperation" Ext="/INFO" Address="0xC0000181" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfResets" Position="10503" FromVersion="A3.08" Description-de="Anzahl der Resets einer Station" Description-en="Number of resets of the station" Ext="/INFO" Address="0x80000182" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfResetsChangeTime" Position="10504" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfResets" Description-en="Time of last change of channel NrOfResets" Ext="/INFO" Address="0xC0000182" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfInits" Position="10505" FromVersion="A3.08" Description-de="Anzahl der Inits einer Station" Description-en="Number of inits of the station" Ext="/INFO" Address="0x80000183" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfInitsChangeTime" Position="10506" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfInits" Description-en="Time of last change of channel NrOfInits" Ext="/INFO" Address="0xC0000183" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfFwUpdates" Position="10507" FromVersion="A3.08" Description-de="Anzahl der FW Updates einer Station" Description-en="Number of FW updates of the station" Ext="/INFO" Address="0x80000184" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfFwUpdatesChangeTime" Position="10508" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfFwUpdates" Description-en="Time of last change of channel NrOfFwUpdates" Ext="/INFO" Address="0xC0000184" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleNoComm" Position="10509" FromVersion="A3.08" Description-de="Anzahl fehlender Antworten vom IO Prozessor am IO Modul" Description-en="Number of missing answers from IO processor on IO module" Ext="/INFO" Address="0x80000185" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleNoCommChangeTime" Position="10510" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModuleNoComm" Description-en="Time of last change of channel ModuleNoComm" Ext="/INFO" Address="0xC0000185" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleCommError" Position="10511" FromVersion="A3.08" Description-de="Anzahl der Fehler bei der Kommunikation zum IO Prozessor am IO Modul" Description-en="Number of communication errors to IO processor on IO module" Ext="/INFO" Address="0x80000186" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleCommErrorChangeTime" Position="10512" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModuleCommError" Description-en="Time of last change of channel ModuleCommError" Ext="/INFO" Address="0xC0000186" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+	</Module><Module ID="SL1.IF1.ST1.IF1.ST8" Hardware="X20BT9100" Simulatable="true"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="10" Type="UDINT"/><Parameter ID="ModuleAddress" Value="0" Type="UDINT"/><Parameter ID="BusType" Value="X2X"/></LegacyAddressInfo><Channel ID="ModuleOk" Position="1" Description-en="Module status (1 = module present)" Description-de="Modul Status (1 = Modul gesteckt)" Ext="/OK" Address="0" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="SerialNumber" Position="2" FromVersion="A3.08" Description-en="Serial number" Description-de="Seriennummer" Ext="/INFO" Address="4" Direction="IN" Type="UDINT" Sig_St_Udint="1">
+		</Channel>
+		<Channel ID="ModuleID" Position="3" FromVersion="A3.08" Description-en="Module ID" Description-de="Modulkennung" Ext="/INFO" Address="10" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="HardwareVariant" Position="4" FromVersion="A3.08" Description-en="Hardware variant" Description-de="Hardware Variante" Ext="/INFO" Address="12" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="FirmwareVersion" Position="5" FromVersion="A3.08" Description-en="Firmware version" Description-de="Firmware Version" Ext="/INFO" Address="14" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="StatusInput01" Position="6" FromVersion="A2.83" Description-en="Bus power supply warning (1 = low voltage &lt;4.7 V)" Description-de="Busversorgungswarnung (1 = Unterspannung &lt;4,7 V)" Ext="/FIXED" Address="1" BitOffset="0" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="StatusInput02" Position="8" FromVersion="B2.85" Description-en="I/O power supply warning (0 = DC OK)" Description-de="I/O Versorgungswarnung (0 = DC OK)" Ext="/FIXED" Address="1" BitOffset="2" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="BusModuleId" Position="10500" FromVersion="A3.08" Description-de="Modul ID des Busmoduls" Description-en="Module ID of bus module" Ext="/INFO" Address="0x80000180" Direction="IN" Type="UINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModeOfOperation" Position="10501" FromVersion="A3.08" Description-de="Status des Moduls" Description-en="Status of module" Ext="/INFO" Address="0x80000181" Direction="IN" Type="USINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModeOfOperationChangeTime" Position="10502" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModeOfOperation" Description-en="Time of last change of channel ModeOfOperation" Ext="/INFO" Address="0xC0000181" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfResets" Position="10503" FromVersion="A3.08" Description-de="Anzahl der Resets einer Station" Description-en="Number of resets of the station" Ext="/INFO" Address="0x80000182" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfResetsChangeTime" Position="10504" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfResets" Description-en="Time of last change of channel NrOfResets" Ext="/INFO" Address="0xC0000182" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfInits" Position="10505" FromVersion="A3.08" Description-de="Anzahl der Inits einer Station" Description-en="Number of inits of the station" Ext="/INFO" Address="0x80000183" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfInitsChangeTime" Position="10506" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfInits" Description-en="Time of last change of channel NrOfInits" Ext="/INFO" Address="0xC0000183" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfFwUpdates" Position="10507" FromVersion="A3.08" Description-de="Anzahl der FW Updates einer Station" Description-en="Number of FW updates of the station" Ext="/INFO" Address="0x80000184" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfFwUpdatesChangeTime" Position="10508" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfFwUpdates" Description-en="Time of last change of channel NrOfFwUpdates" Ext="/INFO" Address="0xC0000184" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleNoComm" Position="10509" FromVersion="A3.08" Description-de="Anzahl fehlender Antworten vom IO Prozessor am IO Modul" Description-en="Number of missing answers from IO processor on IO module" Ext="/INFO" Address="0x80000185" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleNoCommChangeTime" Position="10510" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModuleNoComm" Description-en="Time of last change of channel ModuleNoComm" Ext="/INFO" Address="0xC0000185" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleCommError" Position="10511" FromVersion="A3.08" Description-de="Anzahl der Fehler bei der Kommunikation zum IO Prozessor am IO Modul" Description-en="Number of communication errors to IO processor on IO module" Ext="/INFO" Address="0x80000186" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleCommErrorChangeTime" Position="10512" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModuleCommError" Description-en="Time of last change of channel ModuleCommError" Ext="/INFO" Address="0xC0000186" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+	</Module><Module ID="SL1.IF1.ST1.IF1.ST9" Hardware="80PS080X3.10-01"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="10" Type="UDINT"/><Parameter ID="ModuleAddress" Value="0" Type="UDINT"/><Parameter ID="BusType" Value="X2X"/></LegacyAddressInfo><Channel ID="ModuleOk" Position="1" Description-de="Modul Status (1 = Modul gesteckt)" Description-en="Module status (1 = module present)" Description-fr="Etat module (1 = module présent)" Ext="/OK" Address="0" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="SerialNumber" Position="2" FromVersion="A3.08" Description-de="Seriennummer" Description-en="Serial number" Ext="/INFO" Address="4" Direction="IN" Type="UDINT">
+		</Channel>
+		<Channel ID="ModuleID" Position="3" FromVersion="A3.08" Description-de="Modulkennung" Description-en="Module ID" Ext="/INFO" Address="10" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="HardwareVariant" Position="4" FromVersion="A3.08" Description-de="Hardware Variante" Description-en="Hardware variant" Ext="/INFO" Address="12" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="FirmwareVersion" Position="5" FromVersion="A3.08" Description-de="Firmware Version" Description-en="Firmware version" Ext="/INFO" Address="14" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="CurrentLimit01" Position="8" Description-de="0 = Konstantspannung, 1 = Strombegrenzung aktiv" Description-en="0 = constant voltage, 1 = current limit active" Address="2" BitOffset="2" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="Voltage01" Position="9" Description-de="Spannung Ausgang 01 [V]" Description-en="Voltage output 01 [V]" Address="83" Direction="IN" Type="SINT">
+		</Channel>
+		<Channel ID="Current01" Position="10" Description-de="Strom Ausgang 01 [0,1 A]" Description-en="Current output 01 [0.1 A]" Address="86" Direction="IN" Type="INT">
+		</Channel>
+		<Channel ID="ClearError01" Position="11" Description-de="Loesche Fehler Ausgang 01" Description-en="Clear error output 01" Address="3" BitOffset="0" Direction="OUT" Type="BOOL">
+		</Channel>
+		<Channel ID="ErrorOutput01" Position="12" Description-de="Fehler Ausgang 01 (1 = Ausgang abgeschaltet)" Description-en="Error output 01 (1 = output is switched off)" Address="2" BitOffset="0" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="OverloadError01" Position="13" Description-de="Ueberlastfehler Ausgang 01 (0 = OK)" Description-en="Overload error output 01 (0 = OK)" Address="2" BitOffset="1" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="StatusPhaseDetection01" Position="14" Description-de="Phasenerkennung des Netzeingangs (0 = OK)" Description-en="Phase detection of main input (0 = OK)" Address="2" BitOffset="4" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="StatusOvertemperature01" Position="15" Description-de="Temperaturstatus des Moduls (0 = OK)" Description-en="Status module temperature (0 = OK)" Address="2" BitOffset="5" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="StatusOvervoltage01" Position="16" Description-de="Ueberspannung Ausgang 01 (0 = OK)" Description-en="Overvoltage output 01 (0 = OK)" Address="2" BitOffset="3" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="StatusOutput02" Position="20" Description-de="Status 24 VDC Ausgang (0 = OK)" Description-en="Status 24 VDC output (0 = OK)" Address="2" BitOffset="9" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="BusModuleId" Position="10500" FromVersion="A3.08" Description-de="Modul ID des Busmoduls" Description-en="Module ID of bus module" Ext="/INFO" Address="0x80000180" Direction="IN" Type="UINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModeOfOperation" Position="10501" FromVersion="A3.08" Description-de="Status des Moduls" Description-en="Status of module" Ext="/INFO" Address="0x80000181" Direction="IN" Type="USINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModeOfOperationChangeTime" Position="10502" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModeOfOperation" Description-en="Time of last change of channel ModeOfOperation" Ext="/INFO" Address="0xC0000181" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfResets" Position="10503" FromVersion="A3.08" Description-de="Anzahl der Resets einer Station" Description-en="Number of resets of the station" Ext="/INFO" Address="0x80000182" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfResetsChangeTime" Position="10504" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfResets" Description-en="Time of last change of channel NrOfResets" Ext="/INFO" Address="0xC0000182" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfInits" Position="10505" FromVersion="A3.08" Description-de="Anzahl der Inits einer Station" Description-en="Number of inits of the station" Ext="/INFO" Address="0x80000183" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfInitsChangeTime" Position="10506" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfInits" Description-en="Time of last change of channel NrOfInits" Ext="/INFO" Address="0xC0000183" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfFwUpdates" Position="10507" FromVersion="A3.08" Description-de="Anzahl der FW Updates einer Station" Description-en="Number of FW updates of the station" Ext="/INFO" Address="0x80000184" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfFwUpdatesChangeTime" Position="10508" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfFwUpdates" Description-en="Time of last change of channel NrOfFwUpdates" Ext="/INFO" Address="0xC0000184" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleNoComm" Position="10509" FromVersion="A3.08" Description-de="Anzahl fehlender Antworten vom IO Prozessor am IO Modul" Description-en="Number of missing answers from IO processor on IO module" Ext="/INFO" Address="0x80000185" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleNoCommChangeTime" Position="10510" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModuleNoComm" Description-en="Time of last change of channel ModuleNoComm" Ext="/INFO" Address="0xC0000185" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleCommError" Position="10511" FromVersion="A3.08" Description-de="Anzahl der Fehler bei der Kommunikation zum IO Prozessor am IO Modul" Description-en="Number of communication errors to IO processor on IO module" Ext="/INFO" Address="0x80000186" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleCommErrorChangeTime" Position="10512" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModuleCommError" Description-en="Time of last change of channel ModuleCommError" Ext="/INFO" Address="0xC0000186" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+	</Module><Module ID="SL1.IF1.ST5" Hardware="epl_any"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="-1" Type="UDINT"/><Parameter ID="ModuleAddress" Value="0" Type="UDINT"/><Parameter ID="BusType" Value="Powerlink"/></LegacyAddressInfo></Module><Module ID="SL1.IF1.ST6" Hardware="epl_any"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="-1" Type="UDINT"/><Parameter ID="ModuleAddress" Value="0" Type="UDINT"/><Parameter ID="BusType" Value="Powerlink"/></LegacyAddressInfo></Module><Module ID="SL1.IF1.ST1.IF1.ST4" Hardware="X20DI9371" Simulatable="true"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="10" Type="UDINT"/><Parameter ID="ModuleAddress" Value="0" Type="UDINT"/><Parameter ID="BusType" Value="X2X"/></LegacyAddressInfo><Channel ID="ModuleOk" Position="1" Description-de="Modul Status (1 = Modul gesteckt)" Description-en="Module status (1 = module present)" Description-fr="Etat module (1 = module présent)" Ext="/OK" Address="0" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="SerialNumber" Position="2" FromVersion="A3.08" Description-de="Seriennummer" Description-en="Serial number" Ext="/INFO" Address="4" Direction="IN" Type="UDINT" Sig_St_Udint="1">
+		</Channel>
+		<Channel ID="ModuleID" Position="3" FromVersion="A3.08" Description-de="Modulkennung" Description-en="Module ID" Ext="/INFO" Address="10" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="HardwareVariant" Position="4" FromVersion="A3.08" Description-de="Hardware Variante" Description-en="Hardware variant" Ext="/INFO" Address="12" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="FirmwareVersion" Position="5" FromVersion="A3.08" Description-de="Firmware Version" Description-en="Firmware version" Ext="/INFO" Address="14" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="DigitalInput01" Position="6" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="0" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput02" Position="8" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="1" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput03" Position="10" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="2" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput04" Position="12" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="3" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput05" Position="14" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="4" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput06" Position="16" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="5" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput07" Position="18" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="6" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput08" Position="20" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="7" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput09" Position="22" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="2" BitOffset="0" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput10" Position="24" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="2" BitOffset="1" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput11" Position="26" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="2" BitOffset="2" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput12" Position="28" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="2" BitOffset="3" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="BusModuleId" Position="10500" FromVersion="A3.08" Description-de="Modul ID des Busmoduls" Description-en="Module ID of bus module" Ext="/INFO" Address="0x80000180" Direction="IN" Type="UINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModeOfOperation" Position="10501" FromVersion="A3.08" Description-de="Status des Moduls" Description-en="Status of module" Ext="/INFO" Address="0x80000181" Direction="IN" Type="USINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModeOfOperationChangeTime" Position="10502" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModeOfOperation" Description-en="Time of last change of channel ModeOfOperation" Ext="/INFO" Address="0xC0000181" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfResets" Position="10503" FromVersion="A3.08" Description-de="Anzahl der Resets einer Station" Description-en="Number of resets of the station" Ext="/INFO" Address="0x80000182" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfResetsChangeTime" Position="10504" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfResets" Description-en="Time of last change of channel NrOfResets" Ext="/INFO" Address="0xC0000182" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfInits" Position="10505" FromVersion="A3.08" Description-de="Anzahl der Inits einer Station" Description-en="Number of inits of the station" Ext="/INFO" Address="0x80000183" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfInitsChangeTime" Position="10506" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfInits" Description-en="Time of last change of channel NrOfInits" Ext="/INFO" Address="0xC0000183" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfFwUpdates" Position="10507" FromVersion="A3.08" Description-de="Anzahl der FW Updates einer Station" Description-en="Number of FW updates of the station" Ext="/INFO" Address="0x80000184" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfFwUpdatesChangeTime" Position="10508" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfFwUpdates" Description-en="Time of last change of channel NrOfFwUpdates" Ext="/INFO" Address="0xC0000184" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleNoComm" Position="10509" FromVersion="A3.08" Description-de="Anzahl fehlender Antworten vom IO Prozessor am IO Modul" Description-en="Number of missing answers from IO processor on IO module" Ext="/INFO" Address="0x80000185" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleNoCommChangeTime" Position="10510" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModuleNoComm" Description-en="Time of last change of channel ModuleNoComm" Ext="/INFO" Address="0xC0000185" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleCommError" Position="10511" FromVersion="A3.08" Description-de="Anzahl der Fehler bei der Kommunikation zum IO Prozessor am IO Modul" Description-en="Number of communication errors to IO processor on IO module" Ext="/INFO" Address="0x80000186" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleCommErrorChangeTime" Position="10512" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModuleCommError" Description-en="Time of last change of channel ModuleCommError" Ext="/INFO" Address="0xC0000186" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+	</Module><Module ID="SL1.IF1.ST1.IF1.ST5" Hardware="X20DI9371" Simulatable="true"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="10" Type="UDINT"/><Parameter ID="ModuleAddress" Value="0" Type="UDINT"/><Parameter ID="BusType" Value="X2X"/></LegacyAddressInfo><Channel ID="ModuleOk" Position="1" Description-de="Modul Status (1 = Modul gesteckt)" Description-en="Module status (1 = module present)" Description-fr="Etat module (1 = module présent)" Ext="/OK" Address="0" Direction="IN" Type="BOOL" Sig_St_Bool="1">
+		</Channel>
+		<Channel ID="SerialNumber" Position="2" FromVersion="A3.08" Description-de="Seriennummer" Description-en="Serial number" Ext="/INFO" Address="4" Direction="IN" Type="UDINT" Sig_St_Udint="1">
+		</Channel>
+		<Channel ID="ModuleID" Position="3" FromVersion="A3.08" Description-de="Modulkennung" Description-en="Module ID" Ext="/INFO" Address="10" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="HardwareVariant" Position="4" FromVersion="A3.08" Description-de="Hardware Variante" Description-en="Hardware variant" Ext="/INFO" Address="12" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="FirmwareVersion" Position="5" FromVersion="A3.08" Description-de="Firmware Version" Description-en="Firmware version" Ext="/INFO" Address="14" Direction="IN" Type="UINT" Sig_St_Uint="1">
+		</Channel>
+		<Channel ID="DigitalInput01" Position="6" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="0" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput02" Position="8" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="1" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput03" Position="10" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="2" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput04" Position="12" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="3" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput05" Position="14" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="4" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput06" Position="16" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="5" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput07" Position="18" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="6" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput08" Position="20" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="1" BitOffset="7" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput09" Position="22" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="2" BitOffset="0" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput10" Position="24" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="2" BitOffset="1" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput11" Position="26" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="2" BitOffset="2" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="DigitalInput12" Position="28" FromVersion="V2.92" Description-de="24 VDC, 0,1 bis 25 ms Schaltverzoegerung, Sink" Description-en="24 VDC, 0.1 to 25 ms switching delay, sink" Description-fr="24 VDC, retard de commutation 0ms - 25ms" Ext="/FIXED" Address="2" BitOffset="3" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1">
+		</Channel>
+		<Channel ID="BusModuleId" Position="10500" FromVersion="A3.08" Description-de="Modul ID des Busmoduls" Description-en="Module ID of bus module" Ext="/INFO" Address="0x80000180" Direction="IN" Type="UINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModeOfOperation" Position="10501" FromVersion="A3.08" Description-de="Status des Moduls" Description-en="Status of module" Ext="/INFO" Address="0x80000181" Direction="IN" Type="USINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModeOfOperationChangeTime" Position="10502" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModeOfOperation" Description-en="Time of last change of channel ModeOfOperation" Ext="/INFO" Address="0xC0000181" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfResets" Position="10503" FromVersion="A3.08" Description-de="Anzahl der Resets einer Station" Description-en="Number of resets of the station" Ext="/INFO" Address="0x80000182" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfResetsChangeTime" Position="10504" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfResets" Description-en="Time of last change of channel NrOfResets" Ext="/INFO" Address="0xC0000182" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfInits" Position="10505" FromVersion="A3.08" Description-de="Anzahl der Inits einer Station" Description-en="Number of inits of the station" Ext="/INFO" Address="0x80000183" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfInitsChangeTime" Position="10506" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfInits" Description-en="Time of last change of channel NrOfInits" Ext="/INFO" Address="0xC0000183" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfFwUpdates" Position="10507" FromVersion="A3.08" Description-de="Anzahl der FW Updates einer Station" Description-en="Number of FW updates of the station" Ext="/INFO" Address="0x80000184" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="NrOfFwUpdatesChangeTime" Position="10508" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes NrOfFwUpdates" Description-en="Time of last change of channel NrOfFwUpdates" Ext="/INFO" Address="0xC0000184" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleNoComm" Position="10509" FromVersion="A3.08" Description-de="Anzahl fehlender Antworten vom IO Prozessor am IO Modul" Description-en="Number of missing answers from IO processor on IO module" Ext="/INFO" Address="0x80000185" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleNoCommChangeTime" Position="10510" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModuleNoComm" Description-en="Time of last change of channel ModuleNoComm" Ext="/INFO" Address="0xC0000185" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleCommError" Position="10511" FromVersion="A3.08" Description-de="Anzahl der Fehler bei der Kommunikation zum IO Prozessor am IO Modul" Description-en="Number of communication errors to IO processor on IO module" Ext="/INFO" Address="0x80000186" Direction="IN" Type="DINT" Diagnose="/DIAG">
+		</Channel>
+		<Channel ID="ModuleCommErrorChangeTime" Position="10512" FromVersion="A3.08" Description-de="Zeitpunkt der letzten Änderung des Datenpunktes ModuleCommError" Description-en="Time of last change of channel ModuleCommError" Ext="/INFO" Address="0xC0000186" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG">
+		</Channel>
+	</Module></ChannelConfiguration>

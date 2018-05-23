@@ -1,0 +1,231 @@
+[description]
+longname:   "Pepperl + Fuchs Absolute Rotary Encoder"
+classid:    FBE.0x000000AD_PowerlinkRotaryEncoder_V02-10
+hardwareid: epl_any
+001remark:  Pepperl + Fuchs Absolute Rotary Encoder V2-10
+049remark:  Pepperl + Fuchs Absolutdrehgeber V2-10
+033remark:  
+  
+shortname:  Pepperl + Fuchs Absolute Rotary Encoder
+modno:      -1
+ArVersion:  FROM=A2.90, Build=Error
+bitmap:     hw_pl.bmp
+picture:    plk_any.bmp
+revision:   1.0
+datetime:   12:03:2009 12:00
+dll:        HC_PowerLink.dll
+dll:        BR.AS.RuntimeConfigurationEditor.dll
+metaclass:  HC_PowerLink_Slave_Modul.Metaclass
+metaclass:  RuntimeConfiguration.MetaClass
+
+[hardware]
+family:     16000
+type:       ps, sl, io, in
+link:       eplV2
+stationnumberrange: TO=239
+
+[assigned]
+RPDOs:			2
+
+[contents]
+tab:        IOMap
+tab:        ArCfg
+
+[ArCfg]
+001name:    I/O Configuration
+049name:    I/O Konfiguration
+dll:        BR.AS.RuntimeConfigurationEditor.dll
+class:      RuntimeConfiguration.Class
+
+[IOMap]
+001name:    I/O Mapping
+049name:    I/O Zuordnung
+dll:        BR.AS.IOMapTableEditor.dll
+class:      IO_Mapping.Class
+
+[datadesc]
+
+  
+xmldata: ID=iomapping, FROM=IoMapping
+xmldata: ID=Channels, FROM="ChannelDescription"
+xmldata: ID=Configuration, FROM="RuntimeConfiguration"
+
+[RuntimeConfiguration]
+	<Group ID="General" Name-en="General" Name-de="Allgemein">
+	  <Parameter ID="Supervision" Name-en="Module supervised" Name-de="Modulueberwachung"
+		 Value="on"
+		 Description-en="Service mode if there is no hardware module"
+		 Description-de="Service Mode ausloesen, wenn Modul nicht vorhanden ist">
+		 <ComboBox>
+			<Item ID="off" Name-en="off" Name-de="Aus"/>
+			<Item ID="on" Name-en="on" Name-de="Ein"/>
+		 </ComboBox>
+	  </Parameter>
+	</Group>
+	<Group ID="IOImage" Name-en="I/O Image" Name-de="I/O Bereich" FromVersion="A8.00">
+	    <Parameter ID="InOffset" Name-en="Offset for inputs" Name-de="Offset fuer Eingaenge" Type="UDINT" Value="0" 
+	      Description-en="Offset is relative to base address of master interface"
+	      Description-de="Offset ist relativ zur Basisadresse der Masterschnittstelle"/>
+	    <Parameter ID="OutOffset" Name-en="Offset for outputs" Name-de="Offset fuer Ausgaenge" Type="UDINT" Value="0" 
+	      Description-en="Offset is relative to base address of master interface"
+	      Description-de="Offset ist relativ zur Basisadresse der Masterschnittstelle"/>
+  	</Group>  
+	<Group ID="PL2" Name-en="Powerlink parameters" Name-de="Powerlink Parameter">
+	  
+    <!--########## Powerlink Parameter ##########-->
+    <Selector ID="Mode" Value="CN" Name-en="Mode" Name-de="Modus" Name-fr="Mode">
+      <Selection ID="CN" Name-en="controlled node" Name-de="Controlled Node" Name-fr="controlled node">
+        <Parameter ID="ResponseTimeout" Name-en="Response timeout [us]" Name-de="Antwort Timeout [us]" Name-fr="Response timeout [us]" Type="UDINT" Value="22" Visible="true" Range="2-65000" />
+      </Selection>
+    </Selector>
+    <Parameter ID="ASndMaxLatency" Name-en="ASndMaxLatency [us]" Name-de="ASndMaxLatency [us]" Name-fr="ASndMaxLatency [us]" Type="UDINT" Value="2" Visible="false" />
+    <Parameter ID="EPL_CnSoc2Preq" Name-en="EPL_CnSoc2Preq [us]" Name-de="EPL_CnSoc2Preq [us]" Name-fr="EPL_CnSoc2Preq [us]" Type="UDINT" Value="0" Visible="false" />
+    <Parameter ID="EPL_PReqDataInPResMN" Name-en="Output in PResMN" Name-de="Ausgangsdaten im PResMN" Name-fr="Output in PResMN" Value="off" Visible="true" Template="OnOffText" Description-en="Send output data at the beginning of the cycle in PRes frame from managing node" Description-de="Output Daten am Anfang des Zyklus im PRes-Frame des Managing-Node versenden" />
+    <Selector ID="Multiplexed" Value="0" Name-en="Multiplexed station" Name-de="Multiplexed Station" Name-fr="Multiplexed station" UserConfiguration="Skip">
+      <Selection ID="0" Name-en="off" Name-de="Aus" Name-fr="off">
+        <Parameter ID="MuxNetworkSlot" Name-en="MuxNetworkSlot" Name-de="MuxNetworkSlot" Name-fr="MuxNetworkSlot" Type="UDINT" Value="0" Visible="false" />
+        <Parameter ID="EPL_Chained" Name-en="Chained station" Name-de="Verkettete Station" Name-fr="Chained station" Value="off" Visible="true" Template="OnOffText" Description-en="" Description-de="" />
+      </Selection>
+      <Selection ID="1" Name-en="on" Name-de="Ein" Name-fr="on">
+        <Group ID="Advanced" Name-en="Advanced multiplexing" Name-de="Erweiterte Multiplexing Einstellungen" Name-fr="Advanced multiplexing" Collapsed="false">
+          <Selector ID="ForceCycle" Value="0" Name-en="Force multiplexed station network cycle" Name-de="Netzwerkzyklus der multiplexed Station erzwingen" Name-fr="Force multiplexed station network cycle" UserConfiguration="Skip">
+            <Selection ID="0" Name-en="off" Name-de="Aus" Name-fr="off">
+              <Parameter ID="MuxNetworkSlot" Name-en="MuxNetworkSlot" Name-de="MuxNetworkSlot" Name-fr="MuxNetworkSlot" Type="UDINT" Value="0" Visible="true" CanEdit="false" />
+            </Selection>
+            <Selection ID="1" Name-en="on" Name-de="Ein" Name-fr="on">
+              <Parameter ID="MuxNetworkSlot" Name-en="MuxNetworkSlot" Name-de="MuxNetworkSlot" Name-fr="MuxNetworkSlot" Type="UDINT" Value="1" Visible="true" Range="1-253" />
+            </Selection>
+          </Selector>
+        </Group>
+        <Parameter ID="EPL_Chained" Name-en="Chained station" Name-de="Verkettete Station" Name-fr="Chained station" Value="off" Visible="false" Template="OnOffText" Description-en="" Description-de="" />
+      </Selection>
+    </Selector>
+    <Parameter ID="EPL_RxPdoVersion" Name-en="EPL_RxPdoVersion" Name-de="EPL_RxPdoVersion" Name-fr="EPL_RxPdoVersion" Type="UDINT" Value="0" Visible="false" />
+    <Parameter ID="EPL_ResetToDefault" Name-en="EPL_ResetToDefault" Name-de="EPL_ResetToDefault" Name-fr="EPL_ResetToDefault" Type="STRING" Value="on" Visible="false" />
+    <Parameter ID="EPL_TellMuxSlot" Name-en="EPL_TellMuxSlot" Name-de="EPL_TellMuxSlot" Name-fr="EPL_TellMuxSlot" Type="STRING" Value="off" Visible="false" />
+  
+	  
+    <Group ID="CNSettings" Name-en="Advanced" Name-de="Erweitert" Name-fr="Advanced" Collapsed="true">
+      <Parameter ID="EPL_BootTimeNotActive" Name-en="EPL_BootTimeNotActive" Name-de="EPL_BootTimeNotActive" Name-fr="EPL_BootTimeNotActive" Type="UDINT" Value="3000000" Visible="false" />
+      <Selector ID="DummyDeviceType" Value="off" Name-en="Verify Device Type" Name-de="Geraetetyp pruefen" Name-fr="Verify Device Type" Description-en="Verify correct Device Type" Description-de="Pruefe auf richtigen Geraetetyp" Description-fr="" FromVersion="S2.95">
+        <Selection ID="off" Name-en="off" Name-de="Aus" Name-fr="off" />
+        <Selection ID="0x00020196" Name-en="on 0x00020196" Name-de="ein 0x00020196" Name-fr="on 0x00020196">
+          <Parameter ID="EPL_DeviceType" Name-en="EPL_DeviceType" Name-de="EPL_DeviceType" Name-fr="EPL_DeviceType" Type="UDINT" Value="131478" Visible="false" />
+        </Selection>
+      </Selector>
+      <Selector ID="DummyVendorId" Value="off" Name-en="Verify VendorID" Name-de="Pruefe Hersteller ID" Name-fr="Verify VendorID" Description-en="Verify correct VendorID" Description-de="Pruefe auf richtige Hersteller ID" Description-fr="" FromVersion="S2.95">
+        <Selection ID="off" Name-en="off" Name-de="Aus" Name-fr="off" />
+        <Selection ID="0x000000AD" Name-en="on 0x000000AD" Name-de="ein 0x000000AD" Name-fr="on 0x000000AD">
+          <Parameter ID="VendorId" Name-en="VendorId" Name-de="VendorId" Name-fr="VendorId" Type="UDINT" Value="173" Visible="false" />
+        </Selection>
+      </Selector>
+      <Selector ID="DummyRevisionNo" Value="off" Name-en="Verify RevisionNumber" Name-de="Pruefe Revisionsnummer" Name-fr="Verify RevisionNumber" Description-en="Verify correct Revision Number" Description-de="Pruefe auf richtige Revisionsnummer" Description-fr="" FromVersion="S2.95">
+        <Selection ID="off" Name-en="off" Name-de="Aus" Name-fr="off" />
+        <Selection ID="0x00020000" Name-en="on 0x00020000" Name-de="ein 0x00020000" Name-fr="on 0x00020000">
+          <Parameter ID="EPL_RevisionNo" Name-en="EPL_RevisionNo" Name-de="EPL_RevisionNo" Name-fr="EPL_RevisionNo" Type="UDINT" Value="131072" Visible="false" />
+        </Selection>
+      </Selector>
+      <Selector ID="DummyModno" Value="off" Name-en="Verify Product Code" Name-de="Pruefe Produktcode" Name-fr="Verify Product Code" Description-en="Verify correct product code" Description-de="Pruefe auf richtigen Produktcode" Description-fr="" FromVersion="S2.95">
+        <Selection ID="off" Name-en="off" Name-de="Aus" Name-fr="off" />
+        <Selection ID="0x00004532" Name-en="on 0x00004532" Name-de="ein 0x00004532" Name-fr="on 0x00004532">
+          <Parameter ID="Modno" Name-en="Modno" Name-de="Modno" Name-fr="Modno" Type="UDINT" Value="17714" Visible="false" />
+        </Selection>
+      </Selector>
+      <Parameter ID="EPL_MinCycleTime" Name-en="EPL_MinCycleTime [us]" Name-de="EPL_MinCycleTime [us]" Name-fr="EPL_MinCycleTime [us]" Type="UDINT" Value="200" Visible="false" />
+    </Group>
+  
+	  
+    <!--########## Firmware ##########-->
+    <Group ID="invisible" Visible="false">
+      <Parameter ID="EPL_ResetPostLoad" Type="UINT" Value="42" />
+      <Parameter ID="EPL_ParamStrategy" Value="Store" />
+    </Group>
+  
+	</Group>
+
+    <!--########## Templates ##########-->
+    <Template ID="rw">
+      <ComboBox>
+        <Item ID="no" Name-en="None" Name-de="Keine" Name-fr="TODO" />
+        <Item ID="ro" Name-en="Read" Name-de="Lesen" Name-fr="TODO" />
+        <Item ID="wo" Name-en="Write" Name-de="Schreiben" Name-fr="TODO" />
+        <Item ID="rw" Name-en="Read and Write" Name-de="Lesen und Schreiben" Name-fr="TODO" />
+        <Item ID="readonce" Name-en="Read once" Name-de="Einmal lesen" Name-fr="TODO" />
+      </ComboBox>
+    </Template>
+    <Template ID="ro">
+      <ComboBox>
+        <Item ID="no" Name-en="None" Name-de="Keine" Name-fr="TODO" />
+        <Item ID="ro" Name-en="Read" Name-de="Lesen" Name-fr="TODO" />
+        <Item ID="readonce" Name-en="Read once" Name-de="Einmal lesen" Name-fr="TODO" />
+      </ComboBox>
+    </Template>
+    <Template ID="wo">
+      <ComboBox>
+        <Item ID="no" Name-en="None" Name-de="Keine" Name-fr="TODO" />
+        <Item ID="wo" Name-en="Write" Name-de="Schreiben" Name-fr="TODO" />
+      </ComboBox>
+    </Template>
+    <!--########## Channels ##########-->
+    <Group ID="channels" Name-en="Channels" Name-de="Kanaele" Description-en="Objects for cyclic transmission" Description-de="Objekte fuer zyklische Uebertragung" Collapsed="true">
+      <Group ID="p6004" Name-en="PositionValue_U32_I6004" Collapsed="true">
+        <Parameter ID="p6004_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="ro" Template="ro" CanEdit="false" />
+        <Parameter ID="p6004_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+      </Group>
+    </Group>
+    <!--########## Device specific ##########-->
+    <Group ID="devicespecificparameters" Name-en="Device specific parameters" Name-de="Geraetespezifische Parameter" Description-en="Transmitted to the device at startup" Description-de="Werden beim Hochlauf an das Geraet uebertragen" Collapsed="true">
+      <Group ID="p6000" Name-en="OperatingParameters_U32_I6000" Collapsed="true">
+        <Parameter ID="p6000_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="rw" Visible="false" CanEdit="false" />
+        <Parameter ID="p6000_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        <Parameter ID="p6000_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="16#4" Type="UDINT" />
+      </Group>
+      <Group ID="p6001" Name-en="MeasuringUnitsPerRev_U32_I6001" Collapsed="true">
+        <Parameter ID="p6001_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="rw" Visible="false" CanEdit="false" />
+        <Parameter ID="p6001_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        <Parameter ID="p6001_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+      </Group>
+      <Group ID="p6002" Name-en="TotalMeasuringRange_U32_I6002" Collapsed="true">
+        <Parameter ID="p6002_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="rw" Visible="false" CanEdit="false" />
+        <Parameter ID="p6002_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        <Parameter ID="p6002_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+      </Group>
+      <Group ID="p6003" Name-en="PresetValue_U32_I6003" Collapsed="true">
+        <Parameter ID="p6003_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="rw" Visible="false" CanEdit="false" />
+        <Parameter ID="p6003_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        <Parameter ID="p6003_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="16#0" Type="UDINT" />
+      </Group>
+    </Group>
+    <Parameter ID="InSize" Name-en="InSize" Name-de="InSize" Name-fr="InSize" Type="UDINT" Value="32" Visible="false" />
+  
+
+[ChannelDescription]
+  <Channel ID="ModuleOk" Position="1" 
+    Description-de="Modul Status (1 = Modul gesteckt)"
+    Description-en="Module status (1 = module present)">
+    <Parameter ID="Ext" Value="/OK"/>
+    <Parameter ID="Address" Value="0" Type="UDINT"/>
+    <Parameter ID="Direction" Value="IN"/>
+    <Parameter ID="Type" Value="BOOL"/>
+    <Parameter ID="ArConfig" Value="copy"/>
+  </Channel>
+
+    <Channel ID="PositionValue_U32_I6004" Position="1000">
+      <Filter Value="p6004_direction='ro' OR p6004_direction='rw'" />
+      <Parameter ID="Ext" Value="/FIXED" />
+      <Parameter ID="Address" Value="0x0" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+  
+
+[IoMapping]
+
+    <Grouping Positions="1" Type="Space" />
+  
+
+
+  
+
+  

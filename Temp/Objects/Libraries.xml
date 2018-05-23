@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0.90.36 SP18?>
+<LibraryInfos>
+  <Library Name="Acp10_MC" IsDeployed="false" IsStatic="false" />
+  <Library Name="Acp10man" IsDeployed="true" IsStatic="false" />
+  <Library Name="Acp10par" IsDeployed="true" IsStatic="false" />
+  <Library Name="Acp10sdc" IsDeployed="true" IsStatic="false" />
+  <Library Name="AsARCfg" IsDeployed="true" IsStatic="false" />
+  <Library Name="AsBrMath" IsDeployed="true" IsStatic="false" />
+  <Library Name="AsBrStr" IsDeployed="true" IsStatic="false" />
+  <Library Name="AsEPL" IsDeployed="true" IsStatic="false" />
+  <Library Name="AsIecCon" IsDeployed="false" IsStatic="false" />
+  <Library Name="asstring" IsDeployed="true" IsStatic="false" />
+  <Library Name="AsTime" IsDeployed="false" IsStatic="false" />
+  <Library Name="AsWeigh" IsDeployed="true" IsStatic="false" />
+  <Library Name="brsystem" IsDeployed="true" IsStatic="false" />
+  <Library Name="dvframe" IsDeployed="false" IsStatic="false" />
+  <Library Name="FileIO" IsDeployed="true" IsStatic="false" />
+  <Library Name="LoopConR" IsDeployed="true" IsStatic="false" />
+  <Library Name="NcGlobal" IsDeployed="true" IsStatic="false" />
+  <Library Name="Operator" IsDeployed="false" IsStatic="false" />
+  <Library Name="Runtime" IsDeployed="false" IsStatic="false" />
+  <Library Name="standard" IsDeployed="true" IsStatic="false" />
+  <Library Name="sys_lib" IsDeployed="true" IsStatic="false" />
+</LibraryInfos>

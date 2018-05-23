@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=?>
+<AcoposParameterTable>
+  <Root Name="Parameters">
+    <Parameter Name="UDC_NOMINAL" ID="390" Value="80" Unit="V" Description="CTRL DC bus: Nominal voltage" />
+  </Root>
+</AcoposParameterTable>

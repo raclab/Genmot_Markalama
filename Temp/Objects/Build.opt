@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0.90.36 SP18?>
+<BuildOptions>
+  <Project>
+    <IECNamingConvention>true</IECNamingConvention>
+    <IecKeywordsAsStructureMembers>false</IecKeywordsAsStructureMembers>
+    <IecExtendedConstants>true</IecExtendedConstants>
+    <ProjectLogicalDirectory>C:\projects\Genmot_Markalama_\Logical\</ProjectLogicalDirectory>
+    <ProjectTempDirectory>C:\projects\Genmot_Markalama_\Temp\</ProjectTempDirectory>
+    <ASVersion>3.0.90.36 SP18</ASVersion>
+    <Edition>Standard</Edition>
+    <CrossReference>false</CrossReference>
+    <ActiveConfiguration>Config1</ActiveConfiguration>
+    <CreateAnsiCDeclarations>true</CreateAnsiCDeclarations>
+    <GccVersion>V4.1.2</GccVersion>
+  </Project>
+  <Config Name="Config1">
+    <Target>SG4</Target>
+    <PermanentAnalogMemory>0</PermanentAnalogMemory>
+    <PermanentDigitalMemory>16384</PermanentDigitalMemory>
+    <GccVersion>V4.1.2</GccVersion>
+    <SaveSourceOnTarget>false</SaveSourceOnTarget>
+    <ActivateSdm>false</ActivateSdm>
+    <WebServer>false</WebServer>
+  </Config>
+  <CiR />
+</BuildOptions>

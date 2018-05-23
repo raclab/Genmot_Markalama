@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0.90.36 SP18?>
+<NcMapping NcSwId="acp10">
+  <NcObject Name="gAxis03" ModuleAddress="SDC_IF1.ST1" InterfaceType="SDC" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="x64axisi" AcoposParameter="x64axisa" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="GX1_Axis" ModuleAddress="SL1.IF1.ST6" InterfaceType="Powerlink" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="gaxis02i" AcoposParameter="gaxis02a" Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="SL1.IF1.ST6.VAxis1" ModuleAddress="SL1.IF1.ST6" InterfaceType="Powerlink" Type="ncV_AXIS" Channel="1" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="GX2_Axis" ModuleAddress="SL1.IF1.ST6" InterfaceType="Powerlink" Type="ncAXIS" Channel="2" AcoposSimulation="Off" InitParameter="gaxis03i" AcoposParameter="gaxis03a" Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="SL1.IF1.ST6.VAxis2" ModuleAddress="SL1.IF1.ST6" InterfaceType="Powerlink" Type="ncV_AXIS" Channel="2" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="GZ1_Axis" ModuleAddress="SL1.IF1.ST7" InterfaceType="Powerlink" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="gz1_axisi" AcoposParameter="gz1_axisa" Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="SL1.IF1.ST7.VAxis1" ModuleAddress="SL1.IF1.ST7" InterfaceType="Powerlink" Type="ncV_AXIS" Channel="1" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="GC1_Axis" ModuleAddress="SL1.IF1.ST8" InterfaceType="Powerlink" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="gc1_axisi" AcoposParameter="gz1_axisa" Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="SL1.IF1.ST8.VAxis1" ModuleAddress="SL1.IF1.ST8" InterfaceType="Powerlink" Type="ncV_AXIS" Channel="1" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="GC2_Axis" ModuleAddress="SL1.IF1.ST9" InterfaceType="Powerlink" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="gc2_axisi" AcoposParameter="gc2_axisa" Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="GX3_Axis" ModuleAddress="SL1.IF1.ST5" InterfaceType="Powerlink" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="gaxis01i" AcoposParameter="gaxis01a" Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="SL1.IF1.ST5.VAxis1" ModuleAddress="SL1.IF1.ST5" InterfaceType="Powerlink" Type="ncV_AXIS" Channel="1" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="GRY_Axis" ModuleAddress="SL1.IF1.ST5" InterfaceType="Powerlink" Type="ncAXIS" Channel="2" AcoposSimulation="Off" InitParameter="gry_axisi" AcoposParameter="gry_axisa" Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="SL1.IF1.ST5.VAxis2" ModuleAddress="SL1.IF1.ST5" InterfaceType="Powerlink" Type="ncV_AXIS" Channel="2" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="SL1.IF1.ST9.VAxis1" ModuleAddress="SL1.IF1.ST9" InterfaceType="Powerlink" Type="ncV_AXIS" Channel="1" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="PowerSp1" ModuleAddress="SL1.IF1.ST10" InterfaceType="Powerlink" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="powersp1i" AcoposParameter="powersp1a" Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="SL1.IF1.ST10.VAxis1" ModuleAddress="SL1.IF1.ST10" InterfaceType="Powerlink" Type="ncV_AXIS" Channel="1" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="PowerSp2" ModuleAddress="SL1.IF1.ST10" InterfaceType="Powerlink" Type="ncAXIS" Channel="2" AcoposSimulation="Off" InitParameter="powersp2i" AcoposParameter="powersp2a" Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="SL1.IF1.ST10.VAxis2" ModuleAddress="SL1.IF1.ST10" InterfaceType="Powerlink" Type="ncV_AXIS" Channel="2" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="GRZ_Axis" ModuleAddress="SL1.IF1.ST11" InterfaceType="Powerlink" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="grz_axisi" AcoposParameter="grz_axisa" Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="SL1.IF1.ST11.VAxis1" ModuleAddress="SL1.IF1.ST11" InterfaceType="Powerlink" Type="ncV_AXIS" Channel="1" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="GRX_Axis" ModuleAddress="SL1.IF1.ST11" InterfaceType="Powerlink" Type="ncAXIS" Channel="2" AcoposSimulation="Off" InitParameter="grx_axisi" AcoposParameter="grx_axisa" Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="SL1.IF1.ST11.VAxis2" ModuleAddress="SL1.IF1.ST11" InterfaceType="Powerlink" Type="ncV_AXIS" Channel="2" Disabled="TRUE" ModuleDisabled="FALSE" />
+</NcMapping>

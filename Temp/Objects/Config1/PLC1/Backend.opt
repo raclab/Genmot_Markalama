@@ -1,0 +1,14 @@
+PowerAx2	"$(AS_CPU_PATH)/PowerAx2/a.out" -o "$(AS_CPU_PATH)/PowerAx2/PowerAx2.ox" -T SG4 -r Cyclic1   -G V4.1.2  --$$$newFormat$$$
+RAAxisCont	"$(AS_CPU_PATH)/RAAxisCont/a.out" -o "$(AS_CPU_PATH)/RAAxisCont/RAAxisCont.ox" -T SG4 -r Cyclic1   -G V4.1.2  --$$$newFormat$$$
+Master	"$(AS_CPU_PATH)/Master/a.out" -o "$(AS_CPU_PATH)/Master/Master.ox" -T SG4 -r Cyclic1   -G V4.1.2  --$$$newFormat$$$
+Sender	"$(AS_CPU_PATH)/Sender/a.out" -o "$(AS_CPU_PATH)/Sender/Sender.ox" -T SG4 -r Cyclic2   -G V4.1.2  --$$$newFormat$$$
+RC2AxisCon	"$(AS_CPU_PATH)/RC2AxisCon/a.out" -o "$(AS_CPU_PATH)/RC2AxisCon/RC2AxisCon.ox" -T SG4 -r Cyclic1   -G V4.1.2  --$$$newFormat$$$
+Receiver	"$(AS_CPU_PATH)/Receiver/a.out" -o "$(AS_CPU_PATH)/Receiver/Receiver.ox" -T SG4 -r Cyclic2   -G V4.1.2  --$$$newFormat$$$
+RXAxisCont	"$(AS_CPU_PATH)/RXAxisCont/a.out" -o "$(AS_CPU_PATH)/RXAxisCont/RXAxisCont.ox" -T SG4 -r Cyclic1   -G V4.1.2  --$$$newFormat$$$
+GRXAxisCon	"$(AS_CPU_PATH)/GRXAxisCon/a.out" -o "$(AS_CPU_PATH)/GRXAxisCon/GRXAxisCon.ox" -T SG4 -r Cyclic1   -G V4.1.2  --$$$newFormat$$$
+GRZAxisCon	"$(AS_CPU_PATH)/GRZAxisCon/a.out" -o "$(AS_CPU_PATH)/GRZAxisCon/GRZAxisCon.ox" -T SG4 -r Cyclic1   -G V4.1.2  --$$$newFormat$$$
+PowerAx1	"$(AS_CPU_PATH)/PowerAx1/a.out" -o "$(AS_CPU_PATH)/PowerAx1/PowerAx1.ox" -T SG4 -r Cyclic1   -G V4.1.2  --$$$newFormat$$$
+RZAxisCont	"$(AS_CPU_PATH)/RZAxisCont/a.out" -o "$(AS_CPU_PATH)/RZAxisCont/RZAxisCont.ox" -T SG4 -r Cyclic1   -G V4.1.2  --$$$newFormat$$$
+RYAxisCont	"$(AS_CPU_PATH)/RYAxisCont/a.out" -o "$(AS_CPU_PATH)/RYAxisCont/RYAxisCont.ox" -T SG4 -r Cyclic1   -G V4.1.2  --$$$newFormat$$$
+GRYAxisCon	"$(AS_CPU_PATH)/GRYAxisCon/a.out" -o "$(AS_CPU_PATH)/GRYAxisCon/GRYAxisCon.ox" -T SG4 -r Cyclic4   -G V4.1.2  --$$$newFormat$$$
+RC1AxisCon	"$(AS_CPU_PATH)/RC1AxisCon/a.out" -o "$(AS_CPU_PATH)/RC1AxisCon/RC1AxisCon.ox" -T SG4 -r Cyclic1   -G V4.1.2  --$$$newFormat$$$
